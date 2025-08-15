@@ -1,0 +1,25 @@
+.solution {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../assets/images/slide.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding: 140px 0px;
+  text-align: center;
+  border-radius: 30px;
+}
+.solution h1 {
+  font-size: 5rem;
+  color: white;
+  font-weight: 700;
+  line-height: 1;
+}
+.buttonsol {
+  background-color: #00894f !important;
+  color: white !important;
+  border: 1px solid white !important;
+  border-radius: 30px !important;
+  margin-top: 20px;
+}

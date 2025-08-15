@@ -1,0 +1,103 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+p {
+  font-family: "Outfit", sans-serif !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+:root {
+  --main: #02492e;
+}
+
+#mySidenav {
+  background-color: white;
+  padding: 10px 80px;
+  border-radius: 30px;
+  gap: 50px;
+}
+#mySidenav li a {
+  color: #1e0304;
+}
+.navbar-collapse a.btn {
+  color: #1e0304;
+  background-color: white !important;
+  padding: 15px 60px !important;
+  border-radius: 30px !important;
+  padding-top: 18px !important;
+}
+.logo-link {
+  color: #1e0304;
+  background-color: white;
+  padding: 15px 60px !important;
+  border-radius: 30px !important;
+  /* padding-top: 18px !important; */
+}
+#navbar {
+  margin-top: 20px;
+}
+.nav-sticky.navbar {
+  margin-top: 0px !important;
+  color: #000 !important;
+}
+.nav-sticky.navbar .logo-link,
+.nav-sticky.navbar #mySidenav,
+.nav-sticky.navbar .nav-btn {
+  background-color: #008951 !important;
+  color: white !important;
+}
+
+.nav-sticky.navbar #mySidenav a {
+  color: white !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: white !important;
+}
+.accordion-item:first-of-type > .accordion-header .accordion-button {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+.accordion-button {
+  padding: 0px !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+.img-fluid {
+  height: 100% !important;
+}
+.toast {
+  background-color: white !important; /* Green background */
+  color: var(--main) !important;
+}
+
+.toast-header {
+  background-color: white !important; /* Green background */
+  color: var(--main) !important;
+}
+footer {
+  padding-top: 180px !important;
+}
+.footer {
+  position: relative;
+  z-index: -5;
+}
+.footer_text_main {
+  color: white;
+  font-size: 6rem;
+  text-align: center;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+}
