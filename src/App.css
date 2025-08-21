@@ -101,3 +101,11 @@ footer {
   top: 60px;
   width: 100%;
 }
+.list-group-item:first-child {
+  border-top-left-radius: none !important;
+  border-top-right-radius: none !important;
+}
+
+.list-group-item {
+  border: none !important;
+}
