@@ -89,9 +89,10 @@
 // };
 
 // export default Chooseus;
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./Chooseus.module.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
+
+// Note: You'll need to import your actual images
 import img1 from "../assets/images/choose.jpg";
 import img2 from "../assets/images/banner/5.png";
 
@@ -131,32 +132,72 @@ const features = [
 export default function Chooseus() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [lineHeight, setLineHeight] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const intervalRef = useRef(null);
 
+  // Set up auto-rotation
+  useEffect(() => {
+    if (!isPaused) {
+      intervalRef.current = setInterval(() => {
+        setActiveIndex((prevIndex) => (prevIndex + 1) % features.length);
+      }, 2000);
+    }
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, [isPaused]);
+
+  // Calculate line height
   useEffect(() => {
     const activeItem = document.getElementById(`feature-${activeIndex}`);
-    const listTop =
-      document.getElementById("featureList").getBoundingClientRect().top +
-      window.scrollY;
-    const center =
-      activeItem.getBoundingClientRect().top +
-      window.scrollY +
-      activeItem.offsetHeight / 2;
-    setLineHeight(center - listTop);
+    if (activeItem) {
+      const listTop =
+        document.getElementById("featureList").getBoundingClientRect().top +
+        window.scrollY;
+      const center =
+        activeItem.getBoundingClientRect().top +
+        window.scrollY +
+        activeItem.offsetHeight / 2;
+      setLineHeight(center - listTop);
+    }
   }, [activeIndex]);
+
+  // Handle manual selection
+  const handleFeatureClick = (index) => {
+    setActiveIndex(index);
+    // Pause auto-play when user interacts
+    setIsPaused(true);
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+
+    // Resume auto-play after 5 seconds of inactivity
+    setTimeout(() => {
+      setIsPaused(false);
+    }, 5000);
+  };
 
   return (
     <div className={`container py-5 ${styles.featureWrap}`}>
       <h2 className="text-center pb-5 my-4">
         Why Choose <br /> Badaruddin Stevedoring?
       </h2>
-      <div className="row ">
+      <div className="row">
         <div className={`col-lg-6 pe-lg-5 ${styles.titlesCol}`}>
           <div className={styles.progressTrack}></div>
           <div
             className={styles.progressLine}
             style={{ height: `${lineHeight}px` }}
           ></div>
-          <ul className={`list-group ${styles.featureList}`} id="featureList">
+          <ul
+            className={`list-group ${styles.featureList}`}
+            id="featureList"
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+          >
             {features.map((f, i) => (
               <li
                 key={i}
@@ -164,7 +205,7 @@ export default function Chooseus() {
                 className={`list-group-item ${
                   i === activeIndex ? styles.activeItem : ""
                 }`}
-                onClick={() => setActiveIndex(i)}
+                onClick={() => handleFeatureClick(i)}
               >
                 <div className={styles.title}>{f.title}</div>
                 <div
@@ -180,7 +221,7 @@ export default function Chooseus() {
         </div>
 
         <div className="col-lg-6 d-flex justify-content-center">
-          <div className={` ${styles.imageCard}`}>
+          <div className={styles.imageCard}>
             <img
               src={features[activeIndex].image}
               alt={features[activeIndex].title}

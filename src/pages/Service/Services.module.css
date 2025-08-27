@@ -66,8 +66,8 @@
 .navBtn {
   width: 40px;
   height: 40px;
-  border: 1px solid var(--main);
-  color: var(--main);
+  border: 1px solid #013220;
+  color: #013220;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -84,19 +84,19 @@
 }
 
 .exploreBtn {
-  border: 1px solid #00894f !important;
+  border: 1px solid #00894f;
   background-color: white;
   color: var(--main);
   padding: 15px 30px;
-  border-radius: 30px !important;
+  border-radius: 30px;
   transition: all 0.3s ease;
   font-weight: 500;
   font-size: 1rem;
 }
 
 .exploreBtn:hover {
-  background-color: var(--main) !important;
-  color: white !important;
+  background-color: var(--main);
+  color: white;
 }
 
 /* Responsive adjustments */
@@ -133,4 +133,21 @@
   .swiper-slide {
     padding: 0 5px;
   }
+}
+.lastcontact {
+  font-size: 1.8rem;
+  color: var(--main);
+}
+.exploreBtn {
+  background-color: var(--main) !important;
+  color: white !important;
+  font-weight: bolder;
+  border: none;
+  border-radius: 30px !important;
+}
+.exploreBtn:hover {
+  background-color: white !important;
+  color: var(--main) !important;
+  font-weight: bolder;
+  border: 2px solid var(--main) !important;
 }

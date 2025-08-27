@@ -1,28 +1,31 @@
-import React, { Component } from "react";
+import React, { Component, Suspense } from "react";
 import routes from "../src/routes";
-import { Route,  Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
+// Import global CSS
 import "./App.css";
-
-//import style
 import "./assets/css/pe-icon-7.css";
 import "./assets/css/materialdesignicons.min.css";
-
 import "./assets/scss/themes.scss";
 
+import Footer from "./component/Footer/Footer";
+import NavbarPage from "./component/Navbar/NavBar";
+
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
   render() {
     return (
       <React.Fragment>
-          <Routes>
-            {routes.map((route, idx) => (
-              <Route path={route.path} element={route.component} key={idx} />
-            ))}
-          </Routes>
+        {/* Navbar sab pages par common */}
+        <NavbarPage />
+
+        <Routes>
+          {routes.map((route, idx) => (
+            <Route path={route.path} element={route.component} key={idx} />
+          ))}
+        </Routes>
+
+        {/* Footer bhi sab pages par common (agar chahiye to) */}
+        <Footer />
       </React.Fragment>
     );
   }

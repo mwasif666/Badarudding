@@ -4,16 +4,10 @@ import Solution from "../../component/Solution";
 import Chooseus from "../../component/Chooseus";
 import AccordionCustomer from "../../component/AccordionCustomer";
 
-// Importing Section
+// Import Sections
 const Navbar = React.lazy(() => import("../../component/Navbar/NavBar"));
-
 const Section = React.lazy(() => import("./Section"));
 const Services = React.lazy(() => import("../../component/Services"));
-const Feature = React.lazy(() => import("../../component/Feature"));
-const Pricing = React.lazy(() => import("../../component/Pricing"));
-const Team = React.lazy(() => import("../../component/Team"));
-const Blog = React.lazy(() => import("../../component/Blog"));
-const Contact = React.lazy(() => import("../../component/Contact"));
 const Footer = React.lazy(() => import("../../component/Footer/Footer"));
 
 class Layout7 extends Component {
@@ -32,67 +26,22 @@ class Layout7 extends Component {
     );
   };
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      navItems: [
-        { id: 1, idnm: "home", navheading: "Home" },
-        { id: 2, idnm: "services", navheading: "Services" },
-        { id: 3, idnm: "services", navheading: "Customer Care " },
-        { id: 4, idnm: "services", navheading: "About Us" },
-      ],
-      pos: document.documentElement.scrollTop,
-      imglight: true,
-      navClass: "",
-    };
-  }
-
-  componentDidMount() {
-    window.addEventListener("scroll", this.scrollNavigation, true);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.scrollNavigation, true);
-  }
-
-  scrollNavigation = () => {
-    var scrollup = document.documentElement.scrollTop;
-    if (scrollup > this.state.pos) {
-      this.setState({ navClass: "navbar-light nav-sticky", imglight: false });
-    } else {
-      this.setState({ navClass: "", imglight: true });
-    }
-  };
-
   render() {
     return (
       <React.Fragment>
         <Suspense fallback={this.Loader()}>
-          {/* Importing Navbar */}
-          <Navbar
-            navItems={this.state.navItems}
-            navClass={this.state.navClass}
-            imglight={this.state.imglight}
-          />
+          {/* Navbar directly import hoga */}
+          <Navbar />
 
-          {/* Importing Section */}
+          {/* Sections */}
           <Section />
-
-          {/* Importing Section */}
           <Services />
-
           <Solution />
-
           <Chooseus />
-
           <AccordionCustomer />
+          {/* <Footer /> */}
 
-          {/* Importing Feature */}
-
-          {/* Importing Footer */}
-          <Footer />
-
-          {/* Importing Mode */}
+          {/* Mode Switch */}
           <Switch />
         </Suspense>
       </React.Fragment>

@@ -8,6 +8,7 @@ import styles from "./Services.module.css";
 import Img1 from "../assets/images/banner/5.png";
 import Img2 from "../assets/images/banner/6.png";
 import Img3 from "../assets/images/banner/7.png";
+import { useLocation } from "react-router-dom";
 
 const services = [
   {
@@ -38,6 +39,17 @@ const services = [
 ];
 
 const Services = () => {
+  const location = useLocation();
+  let heading = (
+    <>
+      Comprehensive <br /> Cargo & Logistics <br /> Solutions
+    </>
+  );
+
+  // Agar /about page pe ho to dusra heading
+  if (location.pathname === "/about") {
+    heading = <>What We Do</>;
+  }
   const prevRef = React.useRef(null);
   const nextRef = React.useRef(null);
   return (
@@ -45,9 +57,7 @@ const Services = () => {
       <Container>
         <Row className="align-items-center">
           <Col lg={7} className={styles.padding_services}>
-            <h2 className={`fw-bold ${styles.heading}`}>
-              Comprehensive <br /> Cargo & Logistics <br /> Solutions
-            </h2>
+            <h2 className={`fw-bold ${styles.heading}`}>{heading}</h2>
           </Col>
           <Col
             lg={5}

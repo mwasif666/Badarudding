@@ -2,9 +2,7 @@
   font-size: 6rem;
   color: var(--main);
   text-align: center;
-  position: relative;
-  top: 40px;
-  z-index: -1;
+  padding-bottom: 60px;
 }
 .accordionContainer {
   background-color: #f7efe9;
@@ -66,6 +64,5 @@
   align-items: center;
 }
 .accordionSection {
-  position: relative;
-  top: 110px;
+  margin-bottom: 80px;
 }
