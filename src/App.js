@@ -10,11 +10,13 @@ import "./assets/scss/themes.scss";
 
 import Footer from "./component/Footer/Footer";
 import NavbarPage from "./component/Navbar/NavBar";
+import ScrollToTop from "./Scroll";
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
+        <ScrollToTop />
         {/* Navbar sab pages par common */}
         <NavbarPage />
 

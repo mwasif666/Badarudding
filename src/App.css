@@ -28,7 +28,7 @@ body {
 }
 .navbar-collapse a.btn {
   color: #1e0304;
-  background-color: white !important;
+  background-color: white;
   padding: 15px 60px !important;
   border-radius: 30px !important;
   padding-top: 18px !important;
@@ -59,7 +59,7 @@ body {
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: white !important;
+  background-color: white;
 }
 .accordion-item:first-of-type > .accordion-header .accordion-button {
   border-top-left-radius: 0px !important;

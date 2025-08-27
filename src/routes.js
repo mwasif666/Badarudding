@@ -4,6 +4,7 @@ import PswForget from "../src/pages/PswForget";
 import Layout7 from "../src/pages/Layout7/Layout7";
 import About from "./pages/About/About";
 import Service from "./pages/Service/Service";
+import Blog from "./pages/Blogs/Blog";
 
 const routes = [
   { path: "/password-forget", component: <PswForget /> },
@@ -18,6 +19,10 @@ const routes = [
   {
     path: "/service",
     component: <Service />,
+  },
+  {
+    path: "/blog",
+    component: <Blog />,
   },
 ];
 

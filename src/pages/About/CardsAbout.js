@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./CardsAbout.module.css"; // Import the CSS Module
 import { RiArrowRightSLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const CardsAbout = () => {
   // Data array to map through all the cards with their respective links
@@ -8,33 +9,33 @@ const CardsAbout = () => {
     {
       heading: "58+ Years Of Experience",
       subHeading: "in cargo handling and stevedoring operations",
-      link: "#", // Add your actual link here
+      link: "/blog",
     },
     {
       heading: "25,000+ Shipments",
       subHeading: "Of experience in cargo handling and stevedoring operations",
-      link: "#", // Add your actual link here
+      link: "/blog",
     },
     {
       heading: "75,000+ Containers",
       subHeading: "Handled annually with precision and efficiency",
-      link: "#", // Add your actual link here
+      link: "/blog",
     },
     {
       heading: "450+ Logistics Professionals",
       subHeading: "Operating round-the-clock to ensure smooth operations",
-      link: "#", // Add your actual link here
+      link: "/blog",
     },
     {
       heading: "300+ Client Partnerships",
       subHeading:
         "Including global shipping lines and major infrastructure projects",
-      link: "#", // Add your actual link here
+      link: "/blog",
     },
     {
       heading: "99.8% Safety Record",
       subHeading: "Maintained over the last five years of operations",
-      link: "#", // Add your actual link here
+      link: "/blog",
     },
   ];
 
@@ -54,9 +55,9 @@ const CardsAbout = () => {
                 <a href={card.link} className={styles.arrowButton}>
                   <RiArrowRightSLine />
                 </a>
-                <a href={card.link} className={styles.readMoreButton}>
+                <Link to={card.link} className={styles.readMoreButton}>
                   Read More <RiArrowRightSLine />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

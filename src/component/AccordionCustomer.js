@@ -38,7 +38,7 @@ const AccordionCustomer = () => {
   ];
 
   return (
-    <section className={styles.accordionSection}>
+    <section className={styles.accordionSection} id="customer">
       <div className="container">
         <h1 className={styles.CustomCare}>Customer Care Centre</h1>
         <div className={styles.accordionContainer}>
