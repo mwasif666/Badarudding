@@ -66,3 +66,15 @@
 .accordionSection {
   margin-bottom: 80px;
 }
+
+/* responsive */
+
+@media all and (min-width: 300px) and (max-width: 769px) {
+  .CustomCare {
+    font-size: 2rem;
+  }
+  .headerTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+}

@@ -23,3 +23,8 @@
   border-radius: 30px !important;
   margin-top: 20px;
 }
+@media (max-width: 768px) {
+  .solution h1 {
+    font-size: 2rem;
+  }
+}

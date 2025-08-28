@@ -15,10 +15,10 @@ const FormSection = () => {
   };
 
   return (
-    <div className={`m-5 ${styles.FormSec}`}>
+    <div className={`my-5 mx-lg-5 mx-2 ${styles.FormSec}`}>
       <div className="row g-5">
         {/* Get A Quote */}
-        <div className="col-9">
+        <div className="col-12 col-lg-9">
           <div className={styles.cardBox}>
             <div className="row g-0">
               <div className="col-md-4">

@@ -90,19 +90,21 @@ const QuoteSection = () => {
                     container operations across Pakistan.
                   </p>
                 </div>
-                <div className="d-flex gap-2 mt-3">
+                <div className={styles.buttonsquote}>
                   <Button className={styles.buttonQuote2}>Call Now</Button>
                   <Button className={styles.buttonQuote}>
                     Learn More About Us
                   </Button>
                 </div>
               </div>
-              <div className="col-lg-5 d-flex align-items-center h-100">
-                <img
-                  src={Img2}
-                  alt="Contact Person"
-                  className={styles.roundedCircle}
-                />
+              <div className="col-lg-5 d-lg-block d-none ">
+                <div className="d-flex align-items-center h-100">
+                  <img
+                    src={Img2}
+                    alt="Contact Person"
+                    className={styles.roundedCircle}
+                  />
+                </div>
               </div>
             </div>
           </div>
