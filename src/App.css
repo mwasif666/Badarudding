@@ -119,4 +119,25 @@ footer {
   .footer_text_main {
     font-size: 2rem;
   }
+  #mySidenav {
+    background-color: white;
+    padding: 0px;
+    border-radius: 0px;
+    gap: 0px;
+    color: var(--main) !important;
+  }
+  .navbar .navbar-nav li .nav-link {
+    color: var(--main) !important;
+  }
+  .navbar-collapse a.btn {
+    color: var(--main) !important;
+    background-color: white;
+    padding: 0px 0px !important;
+    padding-top: 0px;
+    border-radius: 0px !important;
+    padding-top: 10px !important;
+  }
+  .logo-link {
+    padding: 0 !important;
+  }
 }
