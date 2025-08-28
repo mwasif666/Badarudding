@@ -4,7 +4,7 @@ import ServiceQuoteSection from "./ServiceQuote";
 
 const ServiceSolution = () => {
   return (
-    <div className="container">
+    <div className="container-fluid px-5">
       <section
         className={styles.solution}
         style={{

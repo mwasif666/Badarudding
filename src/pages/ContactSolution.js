@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./Solution.module.css";
+import styles from "./ContactSolution.module.css";
 
-const Solution = () => {
+const ContactSolution = () => {
   return (
-    <div className="container-fluid px-5">
-      <section className={styles.solution}>
+    <section className={styles.solution}>
+      <div className="container-fluid p-0">
         <div className="row">
           <div className="col-12">
             <h1>
@@ -15,9 +15,9 @@ const Solution = () => {
             <button className={`btn ${styles.buttonsol}`}>Contact Us</button>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
-export default Solution;
+export default ContactSolution;

@@ -5,6 +5,7 @@ import Layout7 from "../src/pages/Layout7/Layout7";
 import About from "./pages/About/About";
 import Service from "./pages/Service/Service";
 import Blog from "./pages/Blogs/Blog";
+import Contact from "./pages/Contact";
 
 const routes = [
   { path: "/password-forget", component: <PswForget /> },
@@ -23,6 +24,10 @@ const routes = [
   {
     path: "/blog",
     component: <Blog />,
+  },
+  {
+    path: "/contact",
+    component: <Contact />,
   },
 ];
 
