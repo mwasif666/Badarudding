@@ -140,4 +140,13 @@ footer {
   .logo-link {
     padding: 0 !important;
   }
+  .nav-sticky.navbar .logo-link,
+  .nav-sticky.navbar #mySidenav,
+  .nav-sticky.navbar .nav-btn {
+    background-color: white !important;
+    color: var(--main) !important;
+  }
+  .nav-sticky.navbar #mySidenav a {
+    color: var(--main) !important;
+  }
 }
