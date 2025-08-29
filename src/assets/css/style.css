@@ -1480,7 +1480,7 @@ h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to top left, #56c6e6 0%, #2753ff 100%);
+  background: linear-gradient(to top left, #56c6e6 0%, #00894f 100%);
   z-index: 9999999;
   transition: all 0.4s;
   visibility: visible;
@@ -2070,6 +2070,7 @@ h6 {
   width: 189px;
   z-index: 9999;
   padding: 10px 5px;
+  display: none !important;
 }
 #style-switcher .mode-light {
   display: block !important;
