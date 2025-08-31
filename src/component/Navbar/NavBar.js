@@ -6,6 +6,10 @@ import {
   NavItem,
   Container,
   Collapse,
+  Offcanvas,
+  OffcanvasBody,
+  OffcanvasHeader,
+  Button,
 } from "reactstrap";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import FeatherIcon from "feather-icons-react";
@@ -13,19 +17,22 @@ import FeatherIcon from "feather-icons-react";
 const NavbarPage = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [navClass, setNavClass] = useState("");
-  const [imglight, setImglight] = useState(true);
+  const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
 
   const location = useLocation();
   const navigate = useNavigate();
   const isHomepage = location.pathname === "/";
 
-  // Static Nav Items 👇
   const navItems = [
     { id: 1, path: "/", navheading: "Home" },
     { id: 2, path: "/service", navheading: "Services" },
     { id: 3, path: "/#customer", navheading: "Customer Care" },
     { id: 4, path: "/about", navheading: "About Us" },
   ];
+
+  const toggleOffcanvas = () => {
+    setIsOffcanvasOpen(!isOffcanvasOpen);
+  };
 
   const toggle = () => {
     setIsOpenMenu(!isOpenMenu);
@@ -37,10 +44,8 @@ const NavbarPage = () => {
       let scrollup = document.documentElement.scrollTop;
       if (scrollup > 50) {
         setNavClass("navbar-light nav-sticky");
-        setImglight(false);
       } else {
         setNavClass("");
-        setImglight(true);
       }
     };
     window.addEventListener("scroll", scrollNavigation, true);
@@ -67,12 +72,18 @@ const NavbarPage = () => {
       scrollToId("customer");
     } else {
       // Navigate to home first
-      navigate("/#customer");
+      navigate("/");
       setTimeout(() => {
         scrollToId("customer");
       }, 300); // wait for route change
     }
     setIsOpenMenu(false);
+    setIsOffcanvasOpen(false);
+  };
+
+  // Close offcanvas when a link is clicked
+  const handleNavClick = () => {
+    setIsOffcanvasOpen(false);
   };
 
   return (
@@ -93,32 +104,18 @@ const NavbarPage = () => {
                 backgroundColor: isHomepage ? "white" : "#f7efe9",
                 transition: "background-color 0.3s ease",
                 color: "#02492e",
+                padding: "8px 16px",
+                display: "inline-block",
+                textDecoration: "none",
               }}
             >
               Badaruddin
             </Link>
           </NavbarBrand>
 
-          <NavbarToggler onClick={toggle}>
-            <i>
-              <FeatherIcon icon="menu" />
-            </i>
-          </NavbarToggler>
-
-          <Collapse
-            id="navbarCollapse"
-            isOpen={isOpenMenu}
-            className="navbar-collapse"
-          >
-            <Nav
-              navbar
-              className="m-auto navbar-center"
-              id="mySidenav"
-              style={{
-                backgroundColor: isHomepage ? "white" : "#f7efe9",
-                transition: "background-color 0.3s ease",
-              }}
-            >
+          {/* Desktop menu - hidden on mobile */}
+          <div className="d-none d-lg-flex align-items-center">
+            <Nav className="m-auto navbar-center" id="mySidenav">
               {navItems.map((item) => (
                 <NavItem
                   key={item.id}
@@ -165,9 +162,120 @@ const NavbarPage = () => {
             >
               Contact
             </Link>
-          </Collapse>
+          </div>
+
+          {/* Mobile menu toggle */}
+          <NavbarToggler onClick={toggleOffcanvas} className="d-lg-none">
+            <FeatherIcon icon="menu" />
+          </NavbarToggler>
         </Container>
       </nav>
+
+      {/* Offcanvas for mobile */}
+      <Offcanvas
+        isOpen={isOffcanvasOpen}
+        toggle={toggleOffcanvas}
+        direction="end"
+        style={{ width: "280px" }}
+        className="d-lg-none"
+      >
+        <OffcanvasHeader toggle={toggleOffcanvas} className="border-bottom">
+          <div className="d-flex align-items-center">
+            <Link
+              to="/"
+              className="logo-link rounded-pill"
+              style={{
+                backgroundColor: "#f7efe9",
+                color: "#02492e",
+                padding: "8px 16px",
+                textDecoration: "none",
+              }}
+              onClick={handleNavClick}
+            >
+              Badaruddin
+            </Link>
+          </div>
+        </OffcanvasHeader>
+        <OffcanvasBody>
+          <Nav navbar vertical className="mt-4">
+            {navItems.map((item) => (
+              <NavItem
+                key={item.id}
+                className={`my-2 ${
+                  location.pathname === item.path ? "active" : ""
+                }`}
+              >
+                {item.path === "/#customer" ? (
+                  <a
+                    href="/#customer"
+                    onClick={(e) => {
+                      handleCustomerClick(e);
+                      handleNavClick();
+                    }}
+                    className="nav-link"
+                    style={{
+                      color: "#02492e",
+                      fontWeight: "500",
+                    }}
+                  >
+                    {item.navheading}
+                  </a>
+                ) : (
+                  <Link
+                    className="nav-link"
+                    to={item.path}
+                    onClick={handleNavClick}
+                    style={{
+                      color: "#02492e",
+                      fontWeight: "500",
+                    }}
+                  >
+                    {item.navheading}
+                  </Link>
+                )}
+              </NavItem>
+            ))}
+            <NavItem className="mt-4">
+              <Link
+                to="/contact"
+                className="btn btn-sm rounded-pill nav-btn w-100 text-center"
+                style={{
+                  backgroundColor: "#f7efe9",
+                  color: "#02492e",
+                }}
+                onClick={handleNavClick}
+              >
+                Contact
+              </Link>
+            </NavItem>
+          </Nav>
+        </OffcanvasBody>
+      </Offcanvas>
+
+      {/* Inline styles for the offcanvas */}
+      <style>
+        {`
+          .offcanvas.offcanvas-end {
+            width: 280px !important;
+            background-color: #fff;
+          }
+          .offcanvas-header .btn-close {
+            font-size: 1.2rem;
+          }
+          .navbar-toggler {
+            border: none;
+            padding: 0.25rem;
+          }
+          .navbar-toggler:focus {
+            box-shadow: none;
+          }
+          @media (max-width: 991px) {
+            .navbar-collapse {
+              display: none !important;
+            }
+          }
+        `}
+      </style>
     </React.Fragment>
   );
 };

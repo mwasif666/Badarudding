@@ -29,3 +29,8 @@
   padding-top: 60px;
   max-width: 550px;
 }
+@media all and (min-width: 300px) and (max-width: 769px) {
+  .headerMain {
+    font-size: 2.2rem;
+  }
+}

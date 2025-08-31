@@ -6,7 +6,7 @@ import Img2 from "../../assets/images/banner/3.png";
 
 const ServiceQuoteSection = () => {
   return (
-    <div className={`m-5`}>
+    <div className={`my-5 px-lg-5 px-5`}>
       <div className="row g-5 justify-content-center">
         {/* Get A Quote */}
         <div className="col-md-8">

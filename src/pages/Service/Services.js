@@ -65,7 +65,7 @@ const Services = () => {
           </Col>
           <Col
             lg={5}
-            className={`text-lg-end mt-3 mt-lg-0 ${styles.padding_services}`}
+            className={`text-lg-end text-center mt-3 mt-lg-0 ${styles.padding_services}`}
           >
             <button className={`btn ${styles.exploreBtn}`}>
               Explore All Services
