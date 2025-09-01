@@ -15,25 +15,29 @@ const AccordionCustomer = () => {
       id: "1",
       title: "Track Your Shipment",
       image: Img1,
-      content: "Modern equipment, digital tracking, and process optimization.",
+      content:
+        "Get real-time updates on your cargo with our advanced digital tracking system.",
     },
     {
       id: "2",
       title: "Download Invoices & Receipts",
       image: Img1,
-      content: "Dummy content for Download Invoices & Receipts",
+      content:
+        "Access and download your invoices and payment receipts anytime, anywhere.",
     },
     {
       id: "3",
       title: "Request Documentation",
       image: Img1,
-      content: "Dummy content for Request Documentation",
+      content:
+        "Easily request shipping documents, certificates, or compliance records for your cargo.",
     },
     {
       id: "4",
       title: "Live Chat Support",
       image: Img1,
-      content: "Dummy content for Live Chat Support",
+      content:
+        "Connect instantly with our support team for quick assistance and inquiries.",
     },
   ];
 

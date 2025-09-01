@@ -19,22 +19,22 @@ const features = [
   },
   {
     title: "Customer Focus",
-    desc: "Our commitment to delivering the best service to clients.",
+    desc: "Tailored logistics solutions designed around client needs with responsive support at every step.",
     image: img1,
   },
   {
     title: "Safety First",
-    desc: "We prioritize the safety of our team and operations.",
+    desc: "Strict adherence to international safety standards to protect cargo and workforce integrity.",
     image: img1,
   },
   {
     title: "Our Team",
-    desc: "A dedicated team of skilled professionals working together.",
+    desc: "A skilled team of professionals combining industry expertise with hands-on operational excellence.",
     image: img1,
   },
   {
     title: "Our Partners",
-    desc: "Collaborating with the best in the industry for mutual success.",
+    desc: "Trusted by leading shipping lines, logistics providers, and government projects across the region.",
     image: img1,
   },
 ];

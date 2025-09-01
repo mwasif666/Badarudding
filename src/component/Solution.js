@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Solution.module.css";
+import { Link } from "react-router-dom";
 
 const Solution = () => {
   return (
@@ -12,7 +13,9 @@ const Solution = () => {
             </h1>
           </div>
           <div className="col-12">
-            <button className={`btn ${styles.buttonsol}`}>Contact Us</button>
+            <Link to="/contact">
+              <button className={`btn ${styles.buttonsol}`}>Contact Us</button>
+            </Link>
           </div>
         </div>
       </section>

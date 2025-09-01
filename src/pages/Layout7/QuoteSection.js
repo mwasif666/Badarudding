@@ -3,6 +3,7 @@ import styles from "./QuoteSection.module.css";
 import { Button, Form } from "react-bootstrap";
 import Img1 from "../../assets/images/banner/4.png";
 import Img2 from "../../assets/images/banner/3.png";
+import { Link } from "react-router-dom";
 
 const QuoteSection = () => {
   return (
@@ -43,14 +44,21 @@ const QuoteSection = () => {
                       />
                     </Form.Group>
                     <div className="d-flex justify-content-between gap-3 align-items-center">
-                      <Form.Group className=" w-100">
-                        <Form.Select className={styles.selectQuote}>
-                          <option>Choose Service</option>
-                          <option>Stevedoring</option>
-                          <option>Cargo Handling</option>
-                          <option>Port Logistics</option>
-                        </Form.Select>
+                      <Form.Group className="mb-2">
+                        <Form.Control
+                          type="email"
+                          placeholder="Enter Your Email or Contact Number"
+                          className={styles.inputQuote}
+                        />
                       </Form.Group>
+                      <Form.Group className="mb-2">
+                        <Form.Control
+                          type="text"
+                          placeholder="Carge Type"
+                          className={styles.selectQuote}
+                        />
+                      </Form.Group>
+
                       <Button type="" className={styles.buttonQuote}>
                         Submit
                       </Button>
@@ -92,9 +100,11 @@ const QuoteSection = () => {
                 </div>
                 <div className={styles.buttonsquote}>
                   <Button className={styles.buttonQuote2}>Call Now</Button>
-                  <Button className={styles.buttonQuote}>
-                    Learn More About Us
-                  </Button>
+                  <Link to="/about">
+                    <Button className={styles.buttonQuote}>
+                      Learn More About Us
+                    </Button>
+                  </Link>
                 </div>
               </div>
               <div className="col-lg-5 d-lg-block d-none ">

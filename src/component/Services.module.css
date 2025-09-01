@@ -98,7 +98,14 @@
   background-color: var(--main) !important;
   color: white !important;
 }
+.disabledBtn {
+  display: none;
+}
 
+.TextServicebtn {
+  text-align: center;
+  width: 100% !important;
+}
 /* Responsive adjustments */
 @media (max-width: 992px) {
   .heading {

@@ -4,7 +4,7 @@ import styles from "../../component/Services.module.css";
 import Img1 from "../../assets/images/banner/5.png";
 import Img2 from "../../assets/images/banner/6.png";
 import Img3 from "../../assets/images/banner/7.png";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const services = [
   {
@@ -23,23 +23,23 @@ const services = [
     img: Img3,
   },
   {
-    title: "Loading",
-    desc: "Efficient equipment and experienced personnel for container handling.",
+    title: "Loading & Unloading",
+    desc: "Efficient handling at ports and inland facilities.",
     img: Img1,
   },
   {
-    title: "Break Bulk",
-    desc: "Specialized handling of non-containerized cargo for vehicles.",
+    title: "Project Cargo Stevedoring",
+    desc: "Tailored solutions for oversized, heavy-lift, and high-value cargo.",
     img: Img2,
   },
   {
-    title: "Stevedoring",
-    desc: "Expert loading and unloading of vessels with precision and speed.",
+    title: "Container Operations",
+    desc: "Comprehensive container handling, stacking, and maintenance services.",
     img: Img1,
   },
   {
-    title: "Break Bulk",
-    desc: "Specialized handling of non-containerized cargo for various industries.",
+    title: "Afghan Transit",
+    desc: "Reliable cross-border logistics for Afghan-bound cargo movements.",
     img: Img2,
   },
 ];
@@ -56,18 +56,31 @@ const Services = () => {
     heading = <>What We Do</>;
   }
 
+  // Check if current path is "/services"
+  const isServicesPage = location.pathname === "/service";
+
   return (
     <section className={`section ${styles.services}`} id="services">
       <Container>
         <Row className="align-items-center">
-          <Col lg={7} className={styles.padding_services}>
-            <h2 className={`fw-bold ${styles.heading}`}>{heading}</h2>
+          <Col
+            lg={7}
+            className={`${styles.padding_services} ${
+              isServicesPage ? styles.TextServicebtn : ""
+            }`}
+          >
+            <h2 className={`fw-bold ${styles.heading} `}>{heading}</h2>
           </Col>
           <Col
             lg={5}
-            className={`text-lg-end text-center mt-3 mt-lg-0 ${styles.padding_services}`}
+            className={`text-lg-end text-center mt-3 mt-lg-0 ${
+              styles.padding_services
+            } ${isServicesPage ? styles.disabledBtn : ""}`}
           >
-            <button className={`btn ${styles.exploreBtn}`}>
+            <button
+              className={`btn ${styles.exploreBtn} `}
+              disabled={isServicesPage}
+            >
               Explore All Services
             </button>
           </Col>
@@ -122,9 +135,11 @@ const Services = () => {
                   <h5 className={styles.lastcontact}>
                     Need A Custom <br /> Logistics Or Cargo <br /> Solution?
                   </h5>
-                  <button className={`btn mt-3 ${styles.exploreBtn}`}>
-                    Contact Now
-                  </button>
+                  <Link to="/contact">
+                    <button className={`btn mt-3 ${styles.exploreBtn}`}>
+                      Contact Now
+                    </button>
+                  </Link>
                 </div>
               </Col>
             </Row>

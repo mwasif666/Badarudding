@@ -109,13 +109,36 @@ const NavbarPage = () => {
                 textDecoration: "none",
               }}
             >
-              Badaruddin
+              <div className="image-logo d-flex align-items-center gap-2">
+                <img
+                  src="./logo2.png"
+                  style={{
+                    width: "50px",
+                    height: "40px",
+                  }}
+                  alt=""
+                />
+                <span>Badaruddin</span>
+              </div>
             </Link>
           </NavbarBrand>
 
           {/* Desktop menu - hidden on mobile */}
-          <div className="d-none d-lg-flex align-items-center">
-            <Nav className="m-auto navbar-center" id="mySidenav">
+          <div
+            className="d-none d-lg-flex align-items-center"
+            style={{
+              gap: "16px",
+            }}
+          >
+            <Nav
+              className="m-auto navbar-center"
+              id="mySidenav"
+              style={{
+                backgroundColor: isHomepage ? "white" : "#f7efe9",
+                transition: "background-color 0.3s ease",
+                color: "#02492e",
+              }}
+            >
               {navItems.map((item) => (
                 <NavItem
                   key={item.id}
@@ -153,7 +176,7 @@ const NavbarPage = () => {
 
             <Link
               to="/contact"
-              className="btn btn-sm rounded-pill nav-btn ms-lg-3"
+              className="btn rounded-pill nav-btn ms-lg-3 contactnavbtn"
               style={{
                 backgroundColor: isHomepage ? "white" : "#f7efe9",
                 transition: "background-color 0.3s ease",

@@ -8,7 +8,7 @@ import styles from "./Services.module.css";
 import Img1 from "../assets/images/banner/5.png";
 import Img2 from "../assets/images/banner/6.png";
 import Img3 from "../assets/images/banner/7.png";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const services = [
   {
@@ -27,13 +27,23 @@ const services = [
     img: Img3,
   },
   {
-    title: "Loading",
-    desc: "Efficient equipment and experienced personnel for container handling.",
+    title: "Loading & Unloading",
+    desc: "Efficient handling at ports and inland facilities.",
     img: Img1,
   },
   {
-    title: "Break Bulk",
-    desc: "Specialized handling of non-containerized cargo for vehicles.",
+    title: "Project Cargo Stevedoring",
+    desc: "Tailored solutions for oversized, heavy-lift, and high-value cargo.",
+    img: Img2,
+  },
+  {
+    title: "Container Operations",
+    desc: "Comprehensive container handling, stacking, and maintenance services.",
+    img: Img1,
+  },
+  {
+    title: "Afghan Transit",
+    desc: "Reliable cross-border logistics for Afghan-bound cargo movements.",
     img: Img2,
   },
 ];
@@ -63,9 +73,11 @@ const Services = () => {
             lg={5}
             className={`text-lg-end text-center mt-3 mt-lg-0 ${styles.padding_services}`}
           >
-            <button className={`btn ${styles.exploreBtn}`}>
-              Explore All Services
-            </button>
+            <Link to="/service">
+              <button className={`btn ${styles.exploreBtn}`}>
+                Explore All Services
+              </button>
+            </Link>
           </Col>
         </Row>
 

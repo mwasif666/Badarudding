@@ -43,13 +43,12 @@ const ServiceQuoteSection = () => {
                       />
                     </Form.Group>
                     <div className="d-flex justify-content-between gap-3 align-items-center">
-                      <Form.Group className=" w-100">
-                        <Form.Select className={styles.selectQuote}>
-                          <option>Choose Service</option>
-                          <option>Stevedoring</option>
-                          <option>Cargo Handling</option>
-                          <option>Port Logistics</option>
-                        </Form.Select>
+                      <Form.Group className="mb-2 w-75">
+                        <Form.Control
+                          type="text"
+                          placeholder="Carge Type"
+                          className={styles.selectQuote}
+                        />
                       </Form.Group>
                       <Button type="" className={styles.buttonQuote}>
                         Submit
