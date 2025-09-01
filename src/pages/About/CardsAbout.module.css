@@ -90,3 +90,22 @@
   visibility: visible; /* Make the "Read More" button visible */
   transform: translateX(-80px); /* Bring the button to the normal position */
 }
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+  .card {
+    padding: 20px 30px !important;
+  }
+  .cardRow {
+    padding: 0px 15px;
+  }
+  .arrowButton {
+    left: 0;
+  }
+  .card:hover .readMoreButton {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50px);
+  }
+}

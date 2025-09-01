@@ -51,7 +51,6 @@ export default function PartnersClients() {
             }}
             speed={6000} // higher = smoother/slower drift; tweak to taste
             spaceBetween={16}
-            slidesPerView={6}
             loopedSlides={dummyLogos.length}
             allowTouchMove={false}
             breakpoints={{

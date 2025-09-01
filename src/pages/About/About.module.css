@@ -84,3 +84,22 @@
 .mainVision {
   margin: 50px 0px;
 }
+@media all and (min-width: 300px) and (max-width: 769px) {
+  .headerMain {
+    font-size: 2.2rem;
+    padding-bottom: 50px;
+  }
+  .para {
+    font-size: 1rem;
+    padding: 10px 30px;
+  }
+  .para br {
+    display: none;
+  }
+  .headerPara {
+    font-size: 2.2rem;
+  }
+  .imageDiv {
+    margin-bottom: 25px;
+  }
+}
