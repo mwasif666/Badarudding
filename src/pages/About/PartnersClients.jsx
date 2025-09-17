@@ -17,6 +17,7 @@ const dummyLogos = Array.from({ length: 16 }).map((_, i) => ({
 export default function PartnersClients() {
   return (
     <section
+      id="partners"
       className={` ${styles.wrapper}`}
       aria-labelledby="partners-heading"
     >

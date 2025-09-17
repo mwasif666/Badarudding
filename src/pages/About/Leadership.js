@@ -82,7 +82,7 @@ const team = [
 
 export default function LeadershipTeam() {
   return (
-    <section className={`container ${styles.section}`}>
+    <section id="team-section" className={`container ${styles.section}`}>
       <div className="text-center mb-4 mb-md-5">
         <h2 className={styles.title}>Our Leadership & Team</h2>
         <p className={`mx-auto ${styles.subheading}`}>

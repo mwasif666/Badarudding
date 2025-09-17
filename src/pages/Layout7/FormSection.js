@@ -15,7 +15,7 @@ const FormSection = () => {
   };
 
   return (
-    <div className={`my-5 mx-lg-5 mx-2 ${styles.FormSec}`}>
+    <div id="contactform" className={`my-5 mx-lg-5 mx-2 ${styles.FormSec}`}>
       <div className="row g-5">
         {/* Get A Quote */}
         <div className="col-12 col-lg-9">
