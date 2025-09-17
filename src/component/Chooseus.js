@@ -96,7 +96,12 @@ export default function Chooseus() {
         Why Choose <br /> Badaruddin Stevedoring?
       </h2>
       <div className="row">
-        <div className={`col-lg-6 pe-lg-5 ${styles.titlesCol}`}>
+        <div
+          className={`col-lg-6 pe-lg-5 ${styles.titlesCol}`}
+          style={{
+            height: "500px",
+          }}
+        >
           <div className={styles.progressTrack}></div>
           <div
             className={styles.progressLine}
