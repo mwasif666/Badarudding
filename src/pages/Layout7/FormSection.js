@@ -35,32 +35,16 @@ const FormSection = () => {
                   {/* Contact Information Section */}
 
                   <div className={`row ${styles.contactInfo}`}>
-                    <div className="col-lg-6">
+                    <div className="col-lg-12">
                       <div className={styles.FormQuote1}>
                         <div className="d-flex justify-content-between align-items-center mb-0">
                           <span className={styles.spanlabel}>Phone:</span>
                         </div>
                         <div className={styles.FormQuote}>
-                          <span>+92-21-323149812</span>
+                          <span>+92-320-5486534</span>
                           <button
                             className={styles.copyButton}
-                            onClick={() => copyToClipboard("+92-21-323149812")}
-                          >
-                            <Copy />
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className={styles.FormQuote1}>
-                        <div className="d-flex justify-content-between align-items-center mb-0">
-                          <span className={styles.spanlabel}>Fax:</span>
-                        </div>
-                        <div className={styles.FormQuote}>
-                          <span>32314948</span>
-                          <button
-                            className={styles.copyButton}
-                            onClick={() => copyToClipboard("32314948")}
+                            onClick={() => copyToClipboard("+92-320-5486534")}
                           >
                             <Copy />
                           </button>
@@ -73,10 +57,10 @@ const FormSection = () => {
                         <span className={styles.spanlabel}>Email:</span>
                       </div>
                       <div className={styles.FormQuote}>
-                        <span>bdnecyber.net.pk</span>
+                        <span>info@badaruddin.net</span>
                         <button
                           className={styles.copyButton}
-                          onClick={() => copyToClipboard("bdnecyber.net.pk")}
+                          onClick={() => copyToClipboard("info@badaruddin.net")}
                         >
                           <Copy />
                         </button>
