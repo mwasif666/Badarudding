@@ -13,67 +13,70 @@ import img5 from "../../assets/images/team/5.png";
 import img6 from "../../assets/images/team/6.png";
 import img7 from "../../assets/images/team/7.png";
 import img8 from "../../assets/images/team/8.png";
+import img9 from "../../assets/images/team/3.png";
 
 const team = [
   {
-    name: "Salman Zulfiqar",
-    role: "Chief Executive Officer",
+    name: "Raheel Javed",
+    role: "HOD - Operations",
     blurb:
-      "Over 30 years in port logistics and strategic cargo operations management.",
+      "Head of Department overseeing operations with leadership in logistics & yard activities.",
     img: img1,
   },
   {
-    name: "Sadia Khan",
-    role: "Chief Operating Officer",
+    name: "Khalique Ahmed",
+    role: "Yard Supervisor - Operations",
     blurb:
-      "Expert in operations & process optimization for large-scale projects.",
+      "Supervises yard operations ensuring smooth handling and coordination.",
     img: img2,
   },
   {
-    name: "Imran Qureshi",
-    role: "Director of Logistics",
+    name: "Ayub Shah",
+    role: "Logistics Incharge - Logistics",
     blurb:
-      "20+ years in international freight forwarding and supply chain solutions.",
+      "Manages logistics operations with responsibility for coordination and supply chain flow.",
     img: img3,
   },
   {
-    name: "Nadia Hussain",
-    role: "Head of Client Relations",
-    blurb:
-      "Specialist in customer engagement and tailored cargo handling strategies.",
+    name: "Mr. Usman",
+    role: "Warehouse Executive - Operations",
+    blurb: "Responsible for warehouse management and operational efficiency.",
     img: img4,
   },
   {
-    id: 5,
-    name: "Bilal Ahmed",
-    role: "Operations Manager",
+    name: "Mr. Hanif",
+    role: "Senior Officer - Export Documentation",
     blurb:
-      "Extensive experience managing port operations & container handling efficiency",
+      "Handles export documentation and ensures compliance with international standards.",
     img: img5,
   },
   {
-    id: 6,
-    name: "Mehboob Azhar",
-    role: "Senior Project Cargo Specialist",
+    name: "Huzaifa Iqbal",
+    role: "Senior Executive - Customer Service & Operations",
     blurb:
-      "Expert in heavy-lift and overused cargo handling for complex logistics needs.",
+      "Ensures smooth operations while supporting customer service excellence.",
     img: img6,
   },
   {
-    id: 7,
-    name: "Ayesha Siddiqui",
-    role: "Finance & Compliance Director",
+    name: "Hasan Riaz",
+    role: "Operation Executive - Customer Service & Operations",
     blurb:
-      "Overseas budgeting, financial planning, and adherence to industry regulations.",
+      "Coordinates operations with a focus on customer satisfaction and efficiency.",
     img: img7,
   },
   {
-    id: 8,
-    name: "Omar Zafar",
-    role: "Technology & Innovation Lead",
+    name: "M. Saim",
+    role: "Logistics Assistant - Logistics",
     blurb:
-      "Drives digital tracking systems and automation in logistics processes.",
+      "Supports logistics operations ensuring timely and accurate coordination.",
     img: img8,
+  },
+  {
+    name: "Sabih Ul Huq",
+    role: "Senior Officer - Export Documentation",
+    blurb:
+      "Expert in export documentation with attention to detail and compliance.",
+    img: img9,
   },
 ];
 
@@ -113,7 +116,7 @@ function MemberCard({ name, role, blurb, img }) {
           </div>
         </div>
         <p className={`mb-4 ${styles.blurb}`}>{blurb}</p>
-        <div className="d-flex align-items-end justify-content-between gap-2">
+        {/* <div className="d-flex align-items-end justify-content-between gap-2">
           <div className={styles.avatarWrap}>
             <img src={img} alt={name} className={styles.avatar} />
           </div>
@@ -133,7 +136,7 @@ function MemberCard({ name, role, blurb, img }) {
               </span>
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

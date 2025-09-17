@@ -46,13 +46,6 @@ const QuoteSection = () => {
                     <div className="d-flex justify-content-between gap-3 align-items-center">
                       <Form.Group className="mb-2">
                         <Form.Control
-                          type="email"
-                          placeholder="Enter Your Email or Contact Number"
-                          className={styles.inputQuote}
-                        />
-                      </Form.Group>
-                      <Form.Group className="mb-2">
-                        <Form.Control
                           type="text"
                           placeholder="Carge Type"
                           className={styles.selectQuote}

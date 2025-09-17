@@ -12,11 +12,11 @@ const ContactSolution = () => {
               Need a Custom <br /> Logistics Solution?
             </h1>
           </div>
-          <div className="col-12">
+          {/* <div className="col-12">
             <Link to="/contact">
               <button className={`btn ${styles.buttonsol}`}>Contact Us</button>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
