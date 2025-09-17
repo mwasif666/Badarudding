@@ -18,13 +18,11 @@ class Footer extends Component {
           id: 1,
           title: "General",
           child: [
-            { title: "About Us", link: "/" },
-            { title: "Our Team", link: "/" },
-            { title: "Our Partners", link: "/" },
-            { title: "Innovations", link: "/" },
-            { title: "Certifcations", link: "/" },
-            { title: "Policy", link: "/" },
-            { title: "Press", link: "/" },
+            { title: "About Us", link: "/about" },
+            { title: "Our Team", link: "/about" },
+            { title: "Our Partners", link: "/about" },
+            { title: "Contact us", link: "/contact" },
+            { title: "Services", link: "/service" },
           ],
         },
         {
