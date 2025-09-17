@@ -94,7 +94,7 @@ export default function LeadershipTeam() {
       </div>
 
       {/* Single grid layout - always show 4 per row */}
-      <div className="row g-4">
+      <div className="row g-4 justify-content-center">
         {team.map((m) => (
           <div key={m.name} className="col-12 col-sm-6 col-lg-3">
             <MemberCard {...m} />
