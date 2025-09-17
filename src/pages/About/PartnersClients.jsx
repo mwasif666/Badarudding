@@ -3,16 +3,33 @@ import styles from "./PartnersClients.module.css";
 
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, FreeMode, Pagination, A11y } from "swiper/modules";
+import { Autoplay, FreeMode, A11y } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-const dummyLogos = Array.from({ length: 16 }).map((_, i) => ({
-  id: i + 1,
-  // square-ish logo tiles; swap with real logos (e.g., /assets/logo-x.png)
-  src: `https://picsum.photos/seed/partner-${i + 1}/160/120`,
-  alt: `Partner logo ${i + 1}`,
-}));
+// Apne logos import karo (replace paths with your actual files)
+import Logo1 from "./../../assets/c1.png";
+import Logo2 from "./../../assets/c2.png";
+import Logo3 from "./../../assets/c3.png";
+import Logo4 from "./../../assets/c4.png";
+import Logo5 from "./../../assets/c1.png";
+import Logo6 from "./../../assets/c2.png";
+
+// Array of logos
+const partnerLogos = [
+  { id: 1, src: Logo1, alt: "Partner Logo 1" },
+  { id: 2, src: Logo2, alt: "Partner Logo 2" },
+  { id: 3, src: Logo3, alt: "Partner Logo 3" },
+  { id: 4, src: Logo4, alt: "Partner Logo 4" },
+  { id: 5, src: Logo5, alt: "Partner Logo 5" },
+  { id: 6, src: Logo6, alt: "Partner Logo 6" },
+  { id: 7, src: Logo1, alt: "Partner Logo 1" },
+  { id: 8, src: Logo2, alt: "Partner Logo 2" },
+  { id: 9, src: Logo3, alt: "Partner Logo 3" },
+  { id: 10, src: Logo4, alt: "Partner Logo 4" },
+  { id: 11, src: Logo5, alt: "Partner Logo 5" },
+  { id: 12, src: Logo6, alt: "Partner Logo 6" },
+];
 
 export default function PartnersClients() {
   return (
@@ -44,15 +61,14 @@ export default function PartnersClients() {
             modules={[Autoplay, FreeMode, A11y]}
             loop
             freeMode={{ enabled: true, momentum: false }}
-            // continuous marquee-style motion:
             autoplay={{
               delay: 0,
               disableOnInteraction: false,
               pauseOnMouseEnter: false,
             }}
-            speed={6000} // higher = smoother/slower drift; tweak to taste
+            speed={6000}
             spaceBetween={16}
-            loopedSlides={dummyLogos.length}
+            loopedSlides={partnerLogos.length}
             allowTouchMove={false}
             breakpoints={{
               576: { slidesPerView: 2, spaceBetween: 16 },
@@ -65,7 +81,7 @@ export default function PartnersClients() {
               nextSlideMessage: "Next partners",
             }}
           >
-            {dummyLogos.map((item) => (
+            {partnerLogos.map((item) => (
               <SwiperSlide key={item.id} className={styles.slideWrap}>
                 <div className={styles.logoCard}>
                   <img
