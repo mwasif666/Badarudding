@@ -1,9 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import styles from "../../component/Services.module.css";
-import Img1 from "../../assets/images/banner/5.png";
-import Img2 from "../../assets/images/banner/6.png";
-import Img3 from "../../assets/images/banner/7.png";
+import Img1 from "./../../assets/images/banner/5.png";
+import Img2 from "./../../assets/images/banner/6.png";
+import Img3 from "./../../assets/images/banner/7.png";
+import Img4 from "./../../assets/images/banner/8.png";
+import Img5 from "./../../assets/images/banner/9.png";
+import Img6 from "./../../assets/images/banner/10.png";
+import Img7 from "./../../assets/images/banner/11.png";
 import { Link, useLocation } from "react-router-dom";
 
 const services = [
@@ -25,22 +29,22 @@ const services = [
   {
     title: "Loading & Unloading",
     desc: "Efficient handling at ports and inland facilities.",
-    img: Img1,
+    img: Img7,
   },
   {
     title: "Project Cargo Stevedoring",
     desc: "Tailored solutions for oversized, heavy-lift, and high-value cargo.",
-    img: Img2,
+    img: Img4,
   },
   {
     title: "Container Operations",
     desc: "Comprehensive container handling, stacking, and maintenance services.",
-    img: Img1,
+    img: Img5,
   },
   {
     title: "Afghan Transit",
     desc: "Reliable cross-border logistics for Afghan-bound cargo movements.",
-    img: Img2,
+    img: Img6,
   },
 ];
 
