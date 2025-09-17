@@ -45,12 +45,12 @@
   align-items: center;
 }
 .FormSec .FormQuote span {
-  font-size: 12px;
+  font-size: 14px;
   width: 90%;
   color: black;
 }
 .spanlabel {
-  color: #bcbcbc;
+  color: #1b1b1b;
   font-size: 10px;
   position: relative;
   left: 15px;

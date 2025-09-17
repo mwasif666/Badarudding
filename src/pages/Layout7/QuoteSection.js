@@ -90,14 +90,11 @@ const QuoteSection = () => {
                     logistics, stevedoring, break bulk, warehousing, and
                     container operations across Pakistan.
                   </p>
-                </div>
-                <div className={styles.buttonsquote}>
-                  <Button className={styles.buttonQuote2}>Call Now</Button>
-                  <Link to="/about">
-                    <Button className={styles.buttonQuote}>
-                      Learn More About Us
-                    </Button>
-                  </Link>
+                  <div className={styles.buttonsquote}>
+                    <a href="tel:+923205486534">
+                      <Button className={styles.buttonQuote2}>Call Now</Button>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="col-lg-5 d-lg-block d-none ">
