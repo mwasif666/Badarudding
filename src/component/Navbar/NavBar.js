@@ -101,9 +101,6 @@ const NavbarPage = () => {
               to="/"
               className="logo-link rounded-pill"
               style={{
-                backgroundColor: isHomepage ? "white" : "#f7efe9",
-                transition: "background-color 0.3s ease",
-                color: "#02492e",
                 padding: "8px 16px",
                 display: "inline-block",
                 textDecoration: "none",
@@ -130,15 +127,7 @@ const NavbarPage = () => {
               gap: "16px",
             }}
           >
-            <Nav
-              className="m-auto navbar-center"
-              id="mySidenav"
-              style={{
-                backgroundColor: isHomepage ? "white" : "#f7efe9",
-                transition: "background-color 0.3s ease",
-                color: "#02492e",
-              }}
-            >
+            <Nav className="m-auto navbar-center" id="mySidenav">
               {navItems.map((item) => (
                 <NavItem
                   key={item.id}
@@ -149,10 +138,6 @@ const NavbarPage = () => {
                       href="/#customer"
                       onClick={handleCustomerClick}
                       className="nav-link"
-                      style={{
-                        color: "#02492e",
-                        fontWeight: "500",
-                      }}
                     >
                       {item.navheading}
                     </a>
@@ -162,10 +147,6 @@ const NavbarPage = () => {
                         location.pathname === item.path ? "active" : ""
                       }`}
                       to={item.path}
-                      style={{
-                        color: "#02492e",
-                        fontWeight: "500",
-                      }}
                     >
                       {item.navheading}
                     </Link>
@@ -177,13 +158,8 @@ const NavbarPage = () => {
             <Link
               to="/contact"
               className="btn rounded-pill nav-btn ms-lg-3 contactnavbtn"
-              style={{
-                backgroundColor: isHomepage ? "white" : "#f7efe9",
-                transition: "background-color 0.3s ease",
-                color: "#02492e",
-              }}
             >
-              Contact
+              Contact Us
             </Link>
           </div>
 
@@ -207,12 +183,6 @@ const NavbarPage = () => {
             <Link
               to="/"
               className="logo-link rounded-pill"
-              style={{
-                backgroundColor: "#f7efe9",
-                color: "#02492e",
-                padding: "8px 16px",
-                textDecoration: "none",
-              }}
               onClick={handleNavClick}
             >
               Badaruddin
@@ -262,13 +232,9 @@ const NavbarPage = () => {
               <Link
                 to="/contact"
                 className="btn btn-sm rounded-pill nav-btn w-100 text-center"
-                style={{
-                  backgroundColor: "#f7efe9",
-                  color: "#02492e",
-                }}
                 onClick={handleNavClick}
               >
-                Contact
+                Contact Us
               </Link>
             </NavItem>
           </Nav>

@@ -4,10 +4,10 @@ import styles from "../../component/Services.module.css";
 import Img1 from "./../../assets/images/banner/5.png";
 import Img2 from "./../../assets/images/banner/6.png";
 import Img3 from "./../../assets/images/banner/7.png";
-import Img4 from "./../../assets/images/banner/10.png";
-import Img5 from "./../../assets/images/banner/9.png";
+import Img4 from "./../../assets/images/new1.jpg";
+import Img5 from "./../../assets/images/new4.webp";
 import Img6 from "./../../assets/images/banner/8.png";
-import Img7 from "./../../assets/images/banner/11.png";
+import Img7 from "./../../assets/images/new3.webp";
 import { Link, useLocation } from "react-router-dom";
 
 const services = [
@@ -50,11 +50,7 @@ const services = [
 
 const Services = () => {
   const location = useLocation();
-  let heading = (
-    <>
-      Comprehensive <br /> Cargo & Logistics <br /> Solutions
-    </>
-  );
+  let heading = <>Cargo & Logistics Solutions</>;
 
   if (location.pathname === "/about") {
     heading = <>What We Do</>;
@@ -68,7 +64,7 @@ const Services = () => {
       <Container>
         <Row className="align-items-center">
           <Col
-            lg={7}
+            lg={9}
             className={`${styles.padding_services} ${
               isServicesPage ? styles.TextServicebtn : ""
             }`}
@@ -76,7 +72,7 @@ const Services = () => {
             <h2 className={`fw-bold ${styles.heading} `}>{heading}</h2>
           </Col>
           <Col
-            lg={5}
+            lg={3}
             className={`text-lg-end text-center mt-3 mt-lg-0 ${
               styles.padding_services
             } ${isServicesPage ? styles.disabledBtn : ""}`}

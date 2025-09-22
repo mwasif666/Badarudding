@@ -16,40 +16,43 @@ body {
 :root {
   --main: #02492e;
 }
-
+.navbar-custom {
+  background-color: #008951 !important;
+  color: white;
+  padding: 0 !important;
+}
 #mySidenav {
-  background-color: white;
-  padding: 15px 80px;
+  padding: 15px 20px;
   border-radius: 30px;
-  gap: 45px;
+  gap: 20px;
+}
+.navbar .nav-btn {
+  background-color: white !important;
+  color: var(--main) !important;
+  padding: 12px 30px !important;
 }
 #mySidenav li a {
-  color: #1e0304;
+  color: white;
 }
 .navbar-collapse a.btn {
   color: #1e0304;
-  background-color: white;
   padding: 15px 60px !important;
   border-radius: 30px !important;
   padding-top: 18px !important;
 }
 .logo-link {
-  color: #1e0304;
-  background-color: white;
+  color: white;
   padding: 15px 40px !important;
   border-radius: 30px !important;
   /* padding-top: 18px !important; */
 }
-#navbar {
-  margin-top: 20px;
-}
+
 .nav-sticky.navbar {
   margin-top: 0px !important;
   color: #000 !important;
 }
 .nav-sticky.navbar .logo-link,
-.nav-sticky.navbar #mySidenav,
-.nav-sticky.navbar .nav-btn {
+.nav-sticky.navbar #mySidenav {
   background-color: #008951 !important;
   color: white !important;
 }

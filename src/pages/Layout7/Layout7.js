@@ -3,6 +3,7 @@ import Switch from "../../component/Switch";
 import Solution from "../../component/Solution";
 import Chooseus from "../../component/Chooseus";
 import AccordionCustomer from "../../component/AccordionCustomer";
+import ContactForm from "../ContactForm";
 
 // Import Sections
 const Navbar = React.lazy(() => import("../../component/Navbar/NavBar"));
@@ -42,6 +43,7 @@ class Layout7 extends Component {
           {/* <Footer /> */}
 
           {/* Mode Switch */}
+          <ContactForm />
           <Switch />
         </Suspense>
       </React.Fragment>
