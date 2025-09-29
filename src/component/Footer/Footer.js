@@ -64,7 +64,10 @@ class Footer extends Component {
                   </p>
                 </div>
               </Col>
-              <Col lg={3} className="m-auto d-flex justify-content-center">
+              <Col
+                lg={3}
+                className="m-auto d-lg-flex justify-content-lg-center"
+              >
                 <Row>
                   {/* Render Footer Link */}
                   {this.state.links.map((item, key) => (

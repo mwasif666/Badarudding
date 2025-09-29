@@ -294,7 +294,8 @@ a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
   .vision-mission {
-    padding: 60px 0;
+    padding: 00px !important;
+    margin: 0px 0 !important;
   }
 
   .section-title h2 {
