@@ -1,9 +1,10 @@
 import React, { Component, Suspense } from "react";
 import Switch from "../../component/Switch";
 import Solution from "../../component/Solution";
-import Chooseus from "../../component/Chooseus";
 import AccordionCustomer from "../../component/AccordionCustomer";
 import ContactForm from "../ContactForm";
+import Vision from "./Vision";
+import Chooseus from "./Chooseus";
 
 // Import Sections
 const Navbar = React.lazy(() => import("../../component/Navbar/NavBar"));
@@ -37,6 +38,7 @@ class Layout7 extends Component {
           {/* Sections */}
           <Section />
           <Services />
+          <Vision />
           <Solution />
           <Chooseus />
           <AccordionCustomer />
