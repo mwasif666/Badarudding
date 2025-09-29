@@ -122,30 +122,36 @@ footer {
 .nav-link {
   padding: 0 !important;
 }
+a:hover {
+  color: white;
+}
 
 /* vision mission */
-.section-title {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.section-title h2 {
-  font-size: 36px;
-  color: #2c5530;
-  margin-bottom: 15px;
+.sectionTitle {
+  color: var(--main);
+  font-weight: 700;
+  margin-bottom: 20px;
   position: relative;
   display: inline-block;
+  font-size: 2.5rem;
 }
-
-.section-title h2:after {
+.sectionTitle {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.sectionTitle::after {
   content: "";
   position: absolute;
+  width: 70%;
+  height: 4px;
+  background: linear-gradient(to right, transparent, var(--main), transparent);
   bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background-color: #2c5530;
+  left: 15%;
+  border-radius: 2px;
+}
+.vision-mission {
+  margin: 80px 0;
 }
 
 .section-title p {
@@ -230,6 +236,80 @@ footer {
   color: #666;
   line-height: 1.7;
   font-size: 16px;
+}
+
+.values-section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.values-section h3 {
+  font-size: 28px;
+  color: #2c5530;
+  margin-bottom: 40px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.value-item {
+  padding: 25px 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.value-item:hover {
+  transform: translateY(-5px);
+}
+
+.value-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 15px;
+  background-color: rgba(44, 85, 48, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2c5530;
+  font-size: 20px;
+}
+
+.value-item h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.value-item p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .vision-mission {
+    padding: 60px 0;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .vision-card,
+  .mission-card {
+    padding: 30px 20px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
 }
 
 /* responsive */

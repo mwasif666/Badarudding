@@ -1,13 +1,13 @@
 import React from "react";
 
-import AccordionCustomer from "../component/AccordionCustomer";
 import ContactSolution from "./ContactSolution";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
     <>
       <ContactSolution />
-      <AccordionCustomer />
+      <ContactForm />
     </>
   );
 };

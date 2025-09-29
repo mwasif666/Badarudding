@@ -1,13 +1,14 @@
 import React from "react";
+import styles from "./Chooseus.module.css";
 
 const Vision = () => {
   return (
     <>
-      <section className="vision-mission mb-5">
+      <section className="vision-mission" style={{ margin: "80px 0" }}>
         <div className="container ">
-          <div className="section-title">
-            <h2>Our Vision & Mission</h2>
-            <p>
+          <div className={`text-center ${styles.sectionHeader}`}>
+            <h2 className={styles.sectionTitle}>Our Vision & Mission</h2>
+            <p className={styles.sectionSubtitle}>
               Driving excellence in logistics through innovation,
               sustainability, and customer-centric solutions
             </p>

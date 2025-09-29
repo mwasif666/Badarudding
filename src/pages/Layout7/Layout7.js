@@ -41,7 +41,7 @@ class Layout7 extends Component {
           <Vision />
           <Solution />
           <Chooseus />
-          <AccordionCustomer />
+          {/* <AccordionCustomer /> */}
           {/* <Footer /> */}
 
           {/* Mode Switch */}

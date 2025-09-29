@@ -5,7 +5,7 @@ const AboutHeader = () => {
   return (
     <>
       <h6 className={style.headersmall}>About us</h6>
-      <h1 className={style.headerMain}>A Legacy of Excellence Since 1966</h1>
+      <h1 className={style.headerMain}>A Legacy of Excellence</h1>
       <h2 className={style.headerPara}>Who We Are</h2>
       <p className={style.para}>
         Established in 1966, Badaurddin Stevedoring (Pvt. Ltd.) has grown into a

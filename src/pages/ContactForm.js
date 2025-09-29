@@ -10,29 +10,28 @@ import { BiGeoAlt, BiGeo, BiTelephone, BiEnvelope } from "react-icons/bi";
 
 const ContactForm = () => {
   return (
-    <section className={styles.ContactForm}>
+    <section className={styles.ContactForm} id="customer">
       <div className="container">
         <div className="row align-items-center">
           {/* Left Side */}
           <div className="col-lg-6 ps-5">
             <h1 className={styles.headingH1}>
-              Looking for a third party logistics company in the Netherlands?
+              Looking for a third party logistics company
             </h1>
             <div className={styles.paras}>
               <p>
                 Improve your logistics efficiency by outsourcing your retail,
-                storage, inventory, and transportation management with Green
-                Logistics.
+                storage, inventory, and transportation management.
               </p>
 
               <p>
                 Have questions or need more information? Want a tour of our
-                Netherlands facilities? Give us a call or send us a message, and
-                our team will be in touch with you.
+                facilities? Give us a call or send us a message, and our team
+                will be in touch with you.
               </p>
             </div>
 
-            <h4 className={styles.headingH4}>Green Logistics Netherlands</h4>
+            <h4 className={styles.headingH4}>Green Logistics</h4>
             <ul className={styles.contactList}>
               <li>
                 <FaMapMarkerAlt /> 1st Floor, 17-19 Ebrahim Building (Reor),{" "}

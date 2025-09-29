@@ -1,10 +1,10 @@
 import React from "react";
 
-import Chooseus from "../../component/Chooseus";
 import AccordionCustomer from "../../component/AccordionCustomer";
 import ServiceHeader from "./ServiceHeader";
 import Services from "./Services";
 import ServiceSolution from "./ServiceSolution";
+import Chooseus from "../Layout7/Chooseus";
 
 const Service = () => {
   return (
@@ -15,7 +15,6 @@ const Service = () => {
       </div>
       <ServiceSolution />
       <Chooseus />
-      <AccordionCustomer />
     </>
   );
 };

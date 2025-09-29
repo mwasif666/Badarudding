@@ -1,21 +1,20 @@
 import React, { Component } from "react";
-import {Row, Col } from 'reactstrap';
+import { Row, Col } from "reactstrap";
 
 class Footer_link extends Component {
   render() {
     return (
-        // Footer Link start
-        <Row>
+      // Footer Link start
+      <Row>
         <Col lg={12}>
-            <div className="text-center mt-5">
-                <p className="text-white-50 f-15 mb-0">
-                    {(new Date().getFullYear())}{" "}
-                     © Qexal. Develop By Themesbrand
-                </p>
-            </div>
+          <div className="text-center mt-5">
+            <p className="text-white-50 f-15 mb-0">
+              {new Date().getFullYear()} ©Badaruddin. Develop By Rootsbmd
+            </p>
+          </div>
         </Col>
-    </Row>
-    //   Footer Link End
+      </Row>
+      //   Footer Link End
     );
   }
 }

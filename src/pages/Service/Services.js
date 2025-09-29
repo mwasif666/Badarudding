@@ -8,6 +8,8 @@ import Img4 from "./../../assets/images/new1.jpg";
 import Img5 from "./../../assets/images/new4.webp";
 import Img6 from "./../../assets/images/banner/8.png";
 import Img7 from "./../../assets/images/new3.webp";
+import Img8 from "./../../assets/images/fleet.webp";
+import Img9 from "./../../assets/images/logistic.webp";
 import { Link, useLocation } from "react-router-dom";
 
 const services = [
@@ -22,7 +24,7 @@ const services = [
     img: Img2,
   },
   {
-    title: "Warehousing/Storage",
+    title: "Bonded Warehousing",
     desc: "Secure, scalable storage solutions for all types of cargo.",
     img: Img3,
   },
@@ -32,7 +34,7 @@ const services = [
     img: Img7,
   },
   {
-    title: "Project Cargo Stevedoring",
+    title: "Project Cargo Handling",
     desc: "Tailored solutions for oversized, heavy-lift, and high-value cargo.",
     img: Img4,
   },
@@ -45,6 +47,16 @@ const services = [
     title: "Afghan Transit",
     desc: "Reliable cross-border logistics for Afghan-bound cargo movements.",
     img: Img6,
+  },
+  {
+    title: "Fleet Management",
+    desc: "Optimized fleet operations for timely and cost-effective deliveries.",
+    img: Img8,
+  },
+  {
+    title: "Logistics",
+    desc: "End-to-end logistics solutions for seamless supply chain management.",
+    img: Img9,
   },
 ];
 
@@ -90,8 +102,8 @@ const Services = () => {
           <Col lg={12} className={`ps-lg-0 ${styles.padding_services2}`}>
             <Row>
               {/* First Row -> pehle 4 services */}
-              {services.slice(0, 4).map((service, idx) => (
-                <Col md={6} lg={3} key={idx} className="mb-4">
+              {services.map((service, idx) => (
+                <Col md={6} lg={4} key={idx} className="mb-4">
                   <div className={styles.card}>
                     <img
                       src={service.img}
@@ -105,43 +117,6 @@ const Services = () => {
                   </div>
                 </Col>
               ))}
-            </Row>
-
-            <Row className="align-items-center">
-              {/* Second Row -> aglay 3 services */}
-              {services.slice(4, 7).map((service, idx) => (
-                <Col md={6} lg={3} key={idx} className="mb-4">
-                  <div className={styles.card}>
-                    <img
-                      src={service.img}
-                      alt={service.title}
-                      className={styles.image}
-                    />
-                    <div className={styles.cardContent}>
-                      <h5 className="mt-3 fw-bold">{service.title}</h5>
-                      <p className="text-muted">{service.desc}</p>
-                    </div>
-                  </div>
-                </Col>
-              ))}
-
-              {/* Last card in second row -> Contact Us */}
-              <Col
-                md={6}
-                lg={3}
-                className="mb-4 d-flex align-items-center h-100"
-              >
-                <div className={`${styles.card} text-center w-100`}>
-                  <h5 className={styles.lastcontact}>
-                    Need A Custom <br /> Logistics Or Cargo <br /> Solution?
-                  </h5>
-                  <Link to="/contact">
-                    <button className={`btn mt-3 ${styles.exploreBtn}`}>
-                      Contact Now
-                    </button>
-                  </Link>
-                </div>
-              </Col>
             </Row>
           </Col>
         </Row>
