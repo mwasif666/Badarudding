@@ -6,6 +6,7 @@ import About from "./pages/About/About";
 import Service from "./pages/Service/Service";
 import Blog from "./pages/Blogs/Blog";
 import Contact from "./pages/Contact";
+import ComingSoonPage from "./pages/Layout7/Commingsoon";
 
 const routes = [
   { path: "/password-forget", component: <PswForget /> },
@@ -28,6 +29,10 @@ const routes = [
   {
     path: "/contact",
     component: <Contact />,
+  },
+  {
+    path: "/commingsoon",
+    component: <ComingSoonPage />,
   },
 ];
 

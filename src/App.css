@@ -122,9 +122,6 @@ footer {
 .nav-link {
   padding: 0 !important;
 }
-a:hover {
-  color: white;
-}
 
 /* vision mission */
 .sectionTitle {
@@ -319,6 +316,9 @@ a:hover {
   .hero-7 .hero-7-title {
     font-size: 30px !important;
     font-weight: 900;
+  }
+  .logo-link {
+    color: var(--main);
   }
   .footer_text_main {
     font-size: 2rem;
