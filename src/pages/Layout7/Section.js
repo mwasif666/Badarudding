@@ -36,7 +36,7 @@ class Section extends Component {
 
           {/* Dark Overlay */}
           <div
-            className="bg-overlay bg-dark"
+            className="bg-overla bg-dar"
             style={{
               position: "absolute",
               top: 0,
