@@ -83,7 +83,7 @@ const team = [
 export default function LeadershipTeam() {
   return (
     <section id="team-section" className={`container ${styles.section}`}>
-      <div className="text-center mb-4 mb-md-5">
+      <div className="text-center mb-4 mb-md-5" data-aos="fade-up">
         <h2 className={styles.title}>Our Leadership & Team</h2>
         <p className={`mx-auto ${styles.subheading}`}>
           Our experienced team combines decades of industry knowledge with
@@ -96,7 +96,12 @@ export default function LeadershipTeam() {
       {/* Single grid layout - always show 4 per row */}
       <div className="row g-4 justify-content-center">
         {team.map((m) => (
-          <div key={m.name} className="col-12 col-sm-6 col-lg-3">
+          <div
+            key={m.name}
+            className="col-12 col-sm-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <MemberCard {...m} />
           </div>
         ))}

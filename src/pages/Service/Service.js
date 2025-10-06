@@ -1,10 +1,9 @@
 import React from "react";
 
-import AccordionCustomer from "../../component/AccordionCustomer";
 import ServiceHeader from "./ServiceHeader";
 import Services from "./Services";
-import ServiceSolution from "./ServiceSolution";
 import Chooseus from "../Layout7/Chooseus";
+import Solution from "../../component/Solution";
 
 const Service = () => {
   return (
@@ -13,7 +12,7 @@ const Service = () => {
       <div className="container">
         <Services />
       </div>
-      <ServiceSolution />
+      <Solution />
       <Chooseus />
     </>
   );

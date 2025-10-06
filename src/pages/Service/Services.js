@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import styles from "../../component/Services.module.css";
-import Img1 from "./../../assets/images/banner/5.png";
+import Img1 from "./../../assets/images/banner/stevedores.jpg";
 import Img2 from "./../../assets/images/banner/6.png";
 import Img3 from "./../../assets/images/banner/7.png";
 import Img4 from "./../../assets/images/new1.jpg";
@@ -103,7 +103,15 @@ const Services = () => {
             <Row>
               {/* First Row -> pehle 4 services */}
               {services.map((service, idx) => (
-                <Col md={6} lg={4} key={idx} className="mb-4">
+                <Col
+                  md={6}
+                  lg={4}
+                  key={idx}
+                  className="mb-4"
+                  data-aos="fade-up"
+                  data-aos-delay={idx * 100}
+                  data-aos-duration="1000"
+                >
                   <div className={styles.card}>
                     <img
                       src={service.img}

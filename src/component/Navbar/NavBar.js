@@ -25,12 +25,12 @@ const NavbarPage = () => {
 
   const navItems = [
     { id: 1, path: "/", navheading: "Home" },
-    { id: 4, path: "/about", navheading: "About Us" },
-    { id: 2, path: "/service", navheading: "Services" },
-    { id: 3, path: "/#customer", navheading: "Customer Care" },
+    { id: 2, path: "/about", navheading: "About Us" },
+    { id: 3, path: "/service", navheading: "Services" },
+    // { id: 3, path: "/#customer", navheading: "Customer Care" },
     { id: 4, path: "/commingsoon", navheading: "Live Tracking Portal" },
-    { id: 4, path: "/commingsoon", navheading: "Career" },
-    { id: 4, path: "/commingsoon", navheading: "Gallery" },
+    { id: 5, path: "/commingsoon", navheading: "Career" },
+    { id: 6, path: "/commingsoon", navheading: "Gallery" },
   ];
 
   const toggleOffcanvas = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import styles from "./Services.module.css";
-import Img1 from "./../assets/images/banner/5.png";
+import Img1 from "./../assets/images/banner/stevedores.jpg";
 import Img2 from "./../assets/images/banner/6.png";
 import Img3 from "./../assets/images/banner/7.png";
 import Img4 from "./../assets/images/new1.jpg";
@@ -72,11 +72,15 @@ const Services = () => {
   const isServicesPage = location.pathname === "/service";
 
   return (
-    <section className={`section ${styles.services}`} id="services">
+    <section
+      data-aos="fade-up"
+      className={`section ${styles.services}`}
+      id="services"
+    >
       <Container>
-        <Row className="align-items-center">
+        <Row className="align-items-center text-center">
           <Col
-            lg={9}
+            lg={12}
             className={`${styles.padding_services} ${
               isServicesPage ? styles.TextServicebtn : ""
             }`}
@@ -86,16 +90,26 @@ const Services = () => {
               <h3 className={`fw-bold ${styles.heading} `}>
                 Full Service Bonded Warehouse
               </h3>
-              <p>
+              <p
+                style={{
+                  fontSize: "18px",
+                  color: "#555",
+                  marginTop: "20px",
+                  padding: "0 20px",
+                }}
+              >
                 We always offer tailored advice and actions. We know that every
                 business is different, and no one knows your business better
                 than you. That's why we personalize every part of our approach
                 to logistics and bonded warehousing. We can easily scale up or
                 down to match your unique process.
               </p>
+              <h3 className={`fw-bold mt-5 ${styles.heading} `}>
+                What we offer
+              </h3>
             </div>
           </Col>
-          <Col
+          {/* <Col
             lg={3}
             className={`text-lg-end text-center mt-3 mt-lg-0 ${
               styles.padding_services
@@ -107,7 +121,7 @@ const Services = () => {
             >
               Explore All Services
             </button>
-          </Col>
+          </Col> */}
         </Row>
 
         <Row className="align-items-start mt-4">
@@ -116,7 +130,12 @@ const Services = () => {
               {/* First Row -> pehle 4 services */}
               {services.map((service, idx) => (
                 <Col md={6} lg={4} key={idx} className="mb-4">
-                  <div className={styles.card}>
+                  <div
+                    className={styles.card}
+                    data-aos="fade-up"
+                    data-aos-delay={idx * 100}
+                    data-aos-duration="1000"
+                  >
                     <img
                       src={service.img}
                       alt={service.title}

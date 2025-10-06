@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 import FooterLink from "../Footer/Footer_link";
 import { FiMapPin, FiPhone, FiMail } from "react-icons/fi";
-
+import { FaLinkedinIn } from "react-icons/fa6";
 // Footer Image
 import footer_image from "../../assets/images/footer-bg.png";
 
@@ -112,10 +112,24 @@ class Footer extends Component {
                       info@badaruddin.net
                     </a>
                   </p>
+
+                  <p style={{ margin: "8px 0" }}>
+                    <FaLinkedinIn style={{ marginRight: "8px" }} />
+                    <a
+                      href="https://www.linkedin.com/company/badaruddin-pvt-ltd/:info@badaruddin.net"
+                      style={{ color: "white", textDecoration: "none" }}
+                    >
+                      badaruddin
+                    </a>
+                  </p>
                 </div>
                 <div
                   className="map-responsive"
-                  style={{ borderRadius: "12px", overflow: "hidden" }}
+                  style={{
+                    borderRadius: "12px",
+                    overflow: "hidden",
+                    marginTop: "10px",
+                  }}
                 >
                   <iframe
                     title="Company Location"

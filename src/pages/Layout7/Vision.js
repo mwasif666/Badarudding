@@ -6,7 +6,10 @@ const Vision = () => {
     <>
       <section className="vision-mission" style={{ margin: "80px 0" }}>
         <div className="container ">
-          <div className={`text-center ${styles.sectionHeader}`}>
+          <div
+            className={`text-center ${styles.sectionHeader}`}
+            data-aos="fade-up"
+          >
             <h2 className={styles.sectionTitle}>Our Vision & Mission</h2>
             <p className={styles.sectionSubtitle}>
               Driving excellence in logistics through innovation,
@@ -15,7 +18,7 @@ const Vision = () => {
           </div>
 
           <div className="vision-mission-grid">
-            <div className="vision-card">
+            <div className="vision-card" data-aos="fade-left">
               <div className="card-icon">👁️</div>
               <h3>Our Vision</h3>
               <p>
@@ -26,7 +29,7 @@ const Vision = () => {
               </p>
             </div>
 
-            <div className="mission-card">
+            <div className="mission-card" data-aos="fade-right">
               <div className="card-icon">🎯</div>
               <h3>Our Mission</h3>
               <p>

@@ -14,20 +14,17 @@ const ContactForm = () => {
       <div className="container">
         <div className="row align-items-center">
           {/* Left Side */}
-          <div className="col-lg-6 ps-5">
-            <h1 className={styles.headingH1}>
-              Looking for a third party logistics company
-            </h1>
+          <div className="col-lg-6 ps-5" data-aos="fade-right">
+            <h1 className={styles.headingH1}>Get in Touch with Badaruddin</h1>
             <div className={styles.paras}>
               <p>
-                Improve your logistics efficiency by outsourcing your retail,
-                storage, inventory, and transportation management.
+                Let Badaruddin manage your inventory and logistics needs
+                efficiently.
               </p>
 
               <p>
-                Have questions or need more information? Want a tour of our
-                facilities? Give us a call or send us a message, and our team
-                will be in touch with you.
+                Fill in your details, and our team will reach out to you
+                shortly.
               </p>
             </div>
 
@@ -49,9 +46,9 @@ const ContactForm = () => {
           </div>
 
           {/* Right Side */}
-          <div className="col-lg-6">
+          <div className="col-lg-6" data-aos="fade-left">
             <div className={styles.FormContact}>
-              <h3>Get in touch today!</h3>
+              <h3>Fill in Your Details</h3>
               <form>
                 <div className="mb-3">
                   <input

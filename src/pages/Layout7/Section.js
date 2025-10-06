@@ -1,14 +1,9 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Container, Row, Col } from "reactstrap";
 
-import { Container, Row, Col, Form, FormGroup, Label, Input } from "reactstrap";
-
-// Import FeatherIcon
-import FeatherIcon from "feather-icons-react";
-
-// Import Background Image
-import Background from "../../assets/images/banner/2.png";
-import QuoteSection from "./QuoteSection";
+// Import Background Video & Thumbnail
+import Background from "../../assets/images/banner.mp4";
+import Thumbnail from "../../assets/images/banner/2.png"; // add your thumbnail image here
 
 class Section extends Component {
   render() {
@@ -16,25 +11,51 @@ class Section extends Component {
       <React.Fragment>
         {/* Hero Start */}
         <section
-          className="hero-7 bg-center position-relative"
-          // Define Background Image
-          style={{
-            background: `url(${Background})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            height: "730px",
-          }}
+          className="hero-7 position-relative"
           id="home"
+          style={{ height: "730px", overflow: "hidden" }}
         >
-          <div className="bg-overlay bg-dark"></div>
-          <Row className="align-items-center">
-            <Container>
-              <Col lg={12}>
-                <h1 className="font-weight-bold text-center mb-4 text-white hero-7-title">
+          {/* Background Video */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster={Thumbnail} // <-- thumbnail appears before video starts
+            className="position-absolute w-100 h-100"
+            style={{
+              objectFit: "cover",
+              top: 0,
+              left: 0,
+              zIndex: -1,
+            }}
+          >
+            <source src={Background} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          {/* Dark Overlay */}
+          <div
+            className="bg-overlay bg-dark"
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              background: "rgba(0,0,0,0.4)", // adjustable darkness
+              zIndex: 0,
+            }}
+          ></div>
+
+          {/* Content */}
+          <Container className="h-100 d-flex align-items-center justify-content-center text-center">
+            <Row className="w-100">
+              <Col lg={12} data-aos="fade-up">
+                <h1 className="font-weight-bold text-white hero-7-title mb-4">
                   Expert Port Logistics <br /> and Cargo Handling
                 </h1>
-                <p className="text-white text-center para-desc mx-auto">
+                <p className="text-white para-desc mx-auto">
                   For decades, Badaruddin has been at the forefront of bonded
                   warehousing and logistics at Karachi Port, providing trusted,
                   secure, and flexible solutions for international trade. Our
@@ -44,14 +65,11 @@ class Section extends Component {
                   imports, bonded storage, and palletized exports, while also
                   specializing in cross-border trade, including Afghan Transit.
                   Badaruddin has become a preferred partner for businesses
-                  seeking comprehensive logistics support.
+                  seeking comprehensive logistics support.
                 </p>
               </Col>
-            </Container>
-            {/* <Col lg={12} className="ms-lg-auto">
-              <QuoteSection />
-            </Col> */}
-          </Row>
+            </Row>
+          </Container>
         </section>
         {/* Hero End */}
       </React.Fragment>

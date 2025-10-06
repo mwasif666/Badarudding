@@ -8,7 +8,10 @@ const Chooseus = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10">
-              <div className={`text-center ${styles.sectionHeader}`}>
+              <div
+                className={`text-center ${styles.sectionHeader}`}
+                data-aos="fade-up"
+              >
                 <h2 className={styles.sectionTitle}>Why Choose Badaruddin?</h2>
                 <p className={styles.sectionSubtitle}>
                   We offer a complete range of bonded warehousing & Logistic
@@ -23,7 +26,7 @@ const Chooseus = () => {
               <div className="row g-4">
                 {/* Feature 1 */}
                 <div className="col-md-6 col-lg-4">
-                  <div className={styles.featureCard}>
+                  <div className={styles.featureCard} data-aos="fade-left">
                     <i
                       className={`fas fa-truck-loading ${styles.featureIcon}`}
                     ></i>
@@ -39,7 +42,7 @@ const Chooseus = () => {
 
                 {/* Feature 2 */}
                 <div className="col-md-6 col-lg-4">
-                  <div className={styles.featureCard}>
+                  <div className={styles.featureCard} data-aos="fade-center">
                     <i
                       className={`fas fa-shield-alt ${styles.featureIcon}`}
                     ></i>
@@ -55,7 +58,7 @@ const Chooseus = () => {
 
                 {/* Feature 3 */}
                 <div className="col-md-6 col-lg-4">
-                  <div className={styles.featureCard}>
+                  <div className={styles.featureCard} data-aos="fade-right">
                     <i className={`fas fa-users-cog ${styles.featureIcon}`}></i>
                     <h4 className={styles.featureTitle}>
                       Trained Staff for Cargo Handling
@@ -69,7 +72,7 @@ const Chooseus = () => {
 
                 {/* Feature 4 */}
                 <div className="col-md-6 col-lg-4">
-                  <div className={styles.featureCard}>
+                  <div className={styles.featureCard} data-aos="fade-left">
                     <i className={`fas fa-headset ${styles.featureIcon}`}></i>
                     <h4 className={styles.featureTitle}>
                       24/7 Customer Support
@@ -83,7 +86,7 @@ const Chooseus = () => {
 
                 {/* Feature 5 */}
                 <div className="col-md-6 col-lg-4">
-                  <div className={styles.featureCard}>
+                  <div className={styles.featureCard} data-aos="fade-center">
                     <i
                       className={`fas fa-map-marked-alt ${styles.featureIcon}`}
                     ></i>
@@ -99,7 +102,7 @@ const Chooseus = () => {
 
                 {/* Feature 6 */}
                 <div className="col-md-6 col-lg-4">
-                  <div className={styles.featureCard}>
+                  <div className={styles.featureCard} data-aos="fade-right">
                     <i
                       className={`fas fa-clipboard-check ${styles.featureIcon}`}
                     ></i>
@@ -113,7 +116,7 @@ const Chooseus = () => {
 
                 {/* Feature 7 */}
                 <div className="col-md-6 col-lg-4">
-                  <div className={styles.featureCard}>
+                  <div className={styles.featureCard} data-aos="fade-left">
                     <i className={`fas fa-video ${styles.featureIcon}`}></i>
                     <h4 className={styles.featureTitle}>
                       Live Camera Monitoring
@@ -127,7 +130,7 @@ const Chooseus = () => {
 
                 {/* Feature 8 */}
                 <div className="col-md-6 col-lg-4">
-                  <div className={styles.featureCard}>
+                  <div className={styles.featureCard} data-aos="fade-center">
                     <i
                       className={`fas fa-satellite-dish ${styles.featureIcon}`}
                     ></i>
@@ -143,7 +146,7 @@ const Chooseus = () => {
 
                 {/* Feature 9 */}
                 <div className="col-md-6 col-lg-4">
-                  <div className={styles.featureCard}>
+                  <div className={styles.featureCard} data-aos="fade-right">
                     <i className={`fas fa-leaf ${styles.featureIcon}`}></i>
                     <h4 className={styles.featureTitle}>
                       Scalable & Sustainable Practices
@@ -157,7 +160,7 @@ const Chooseus = () => {
               </div>
 
               {/* Stats Section */}
-              <div className={styles.statsSection}>
+              <div className={styles.statsSection} data-aos="fade-up">
                 <div className="row text-center">
                   <div className="col-6 col-md-3">
                     <div className={styles.statItem}>

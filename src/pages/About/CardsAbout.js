@@ -44,7 +44,11 @@ const CardsAbout = () => {
       <div className={`row ${styles.cardRow}`}>
         {cardData.map((card, index) => (
           <div key={index} className="col-12 mb-4">
-            <div className={styles.card}>
+            <div
+              className={styles.card}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
               <div>
                 <h3 className={styles.heading}>{card.heading}</h3>
               </div>
