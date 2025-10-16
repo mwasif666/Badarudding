@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
 }
 :root {
-  --main: #02492e;
+  --main: #008951;
 }
 .navbar-custom {
   background-color: #008951 !important;

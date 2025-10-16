@@ -28,7 +28,7 @@ const ContactForm = () => {
               </p>
             </div>
 
-            <h4 className={styles.headingH4}>Green Logistics</h4>
+            {/* <h4 className={styles.headingH4}>Green Logistics</h4> */}
             <ul className={styles.contactList}>
               <li>
                 <FaMapMarkerAlt /> 1st Floor, 17-19 Ebrahim Building (Reor),{" "}
@@ -62,6 +62,13 @@ const ContactForm = () => {
                     type="text"
                     className="form-control"
                     placeholder="Personal name"
+                  />
+                </div>
+                <div className="mb-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Cargo Type"
                   />
                 </div>
                 <div className="mb-3">

@@ -28,7 +28,7 @@ const NavbarPage = () => {
     { id: 2, path: "/about", navheading: "About Us" },
     { id: 3, path: "/service", navheading: "Services" },
     // { id: 3, path: "/#customer", navheading: "Customer Care" },
-    { id: 4, path: "/commingsoon", navheading: "Live Tracking Portal" },
+    // { id: 4, path: "/commingsoon", navheading: "Live Tracking Portal" },
     { id: 5, path: "/commingsoon", navheading: "Career" },
     { id: 6, path: "/commingsoon", navheading: "Gallery" },
   ];
