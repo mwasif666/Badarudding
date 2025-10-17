@@ -5,9 +5,8 @@ import styles from "./PartnersClients.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode, A11y } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/pagination";
 
-// Apne logos import karo (replace paths with your actual files)
+// Logos
 import Logo1 from "./../../assets/images/clients/1.png";
 import Logo2 from "./../../assets/images/clients/2.png";
 import Logo3 from "./../../assets/images/clients/3.png";
@@ -29,35 +28,61 @@ import Logo18 from "./../../assets/images/clients/18.png";
 import Logo19 from "./../../assets/images/clients/19.png";
 import Logo20 from "./../../assets/images/clients/20.png";
 
-// Array of logos
 const partnerLogos = [
-  { id: 1, src: Logo1, alt: "Partner Logo 1" },
-  { id: 2, src: Logo2, alt: "Partner Logo 2" },
-  { id: 3, src: Logo3, alt: "Partner Logo 3" },
-  { id: 4, src: Logo4, alt: "Partner Logo 4" },
-  { id: 5, src: Logo5, alt: "Partner Logo 5" },
-  { id: 6, src: Logo6, alt: "Partner Logo 6" },
-  { id: 7, src: Logo7, alt: "Partner Logo 1" },
-  { id: 8, src: Logo8, alt: "Partner Logo 2" },
-  { id: 9, src: Logo9, alt: "Partner Logo 3" },
-  { id: 10, src: Logo10, alt: "Partner Logo 4" },
-  { id: 11, src: Logo11, alt: "Partner Logo 5" },
-  { id: 12, src: Logo12, alt: "Partner Logo 6" },
-  { id: 12, src: Logo13, alt: "Partner Logo 6" },
-  { id: 12, src: Logo14, alt: "Partner Logo 6" },
-  { id: 12, src: Logo15, alt: "Partner Logo 6" },
-  { id: 12, src: Logo16, alt: "Partner Logo 6" },
-  { id: 12, src: Logo17, alt: "Partner Logo 6" },
-  { id: 12, src: Logo18, alt: "Partner Logo 6" },
-  { id: 12, src: Logo19, alt: "Partner Logo 6" },
-  { id: 12, src: Logo20, alt: "Partner Logo 6" },
+  Logo1,
+  Logo2,
+  Logo3,
+  Logo4,
+  Logo5,
+  Logo6,
+  Logo7,
+  Logo8,
+  Logo9,
+  Logo10,
+  Logo11,
+  Logo12,
+  Logo13,
+  Logo14,
+  Logo15,
+  Logo16,
+  Logo17,
+  Logo18,
+  Logo19,
+  Logo20,
+  Logo1,
+  Logo2,
+  Logo3,
+  Logo4,
+  Logo5,
+  Logo6,
+  Logo7,
+  Logo8,
+  Logo9,
+  Logo10,
+  Logo11,
+  Logo12,
+  Logo13,
+  Logo14,
+  Logo15,
+  Logo16,
+  Logo17,
+  Logo18,
+  Logo19,
+  Logo20,
 ];
 
 export default function PartnersClients() {
+  // Split into 3 equal rows
+  const rowCount = 3;
+  const logosPerRow = Math.ceil(partnerLogos.length / rowCount);
+  const rows = Array.from({ length: rowCount }, (_, i) =>
+    partnerLogos.slice(i * logosPerRow, (i + 1) * logosPerRow)
+  );
+
   return (
     <section
       id="partners"
-      className={` ${styles.wrapper}`}
+      className={`${styles.wrapper}`}
       aria-labelledby="partners-heading"
     >
       <div className="container">
@@ -75,11 +100,12 @@ export default function PartnersClients() {
             </p>
           </div>
         </div>
-      </div>
-      <div className="row">
-        <div className="col-12">
+
+        {/* 3 Swipers - one per line */}
+        {rows.map((row, index) => (
           <Swiper
-            className={styles.slider}
+            key={index}
+            className={`${styles.slider} mt-4`}
             modules={[Autoplay, FreeMode, A11y]}
             loop
             freeMode={{ enabled: true, momentum: false }}
@@ -87,28 +113,24 @@ export default function PartnersClients() {
               delay: 0,
               disableOnInteraction: false,
               pauseOnMouseEnter: false,
+              reverseDirection: index % 2 !== 0, // alternate directions
             }}
             speed={6000}
             spaceBetween={16}
-            loopedSlides={partnerLogos.length}
             allowTouchMove={false}
             breakpoints={{
-              576: { slidesPerView: 2, spaceBetween: 16 },
-              768: { slidesPerView: 4, spaceBetween: 18 },
-              992: { slidesPerView: 4, spaceBetween: 20 },
-              1200: { slidesPerView: 6, spaceBetween: 20 },
-            }}
-            a11y={{
-              prevSlideMessage: "Previous partners",
-              nextSlideMessage: "Next partners",
+              576: { slidesPerView: 3 },
+              768: { slidesPerView: 4 },
+              992: { slidesPerView: 5 },
+              1200: { slidesPerView: 6 },
             }}
           >
-            {partnerLogos.map((item) => (
-              <SwiperSlide key={item.id} className={styles.slideWrap}>
+            {row.map((logo, i) => (
+              <SwiperSlide key={i} className={styles.slideWrap}>
                 <div className={styles.logoCard}>
                   <img
-                    src={item.src}
-                    alt={item.alt}
+                    src={logo}
+                    alt={`Partner Logo ${i + 1}`}
                     loading="lazy"
                     className={styles.logoImg}
                   />
@@ -116,7 +138,7 @@ export default function PartnersClients() {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
+        ))}
       </div>
     </section>
   );
