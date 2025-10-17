@@ -8,12 +8,26 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // Apne logos import karo (replace paths with your actual files)
-import Logo1 from "./../../assets/c1.png";
-import Logo2 from "./../../assets/c2.png";
-import Logo3 from "./../../assets/c3.png";
-import Logo4 from "./../../assets/c4.png";
-import Logo5 from "./../../assets/c1.png";
-import Logo6 from "./../../assets/c2.png";
+import Logo1 from "./../../assets/images/clients/1.png";
+import Logo2 from "./../../assets/images/clients/2.png";
+import Logo3 from "./../../assets/images/clients/3.png";
+import Logo4 from "./../../assets/images/clients/4.png";
+import Logo5 from "./../../assets/images/clients/5.png";
+import Logo6 from "./../../assets/images/clients/6.png";
+import Logo7 from "./../../assets/images/clients/7.png";
+import Logo8 from "./../../assets/images/clients/8.png";
+import Logo9 from "./../../assets/images/clients/9.png";
+import Logo10 from "./../../assets/images/clients/10.png";
+import Logo11 from "./../../assets/images/clients/11.png";
+import Logo12 from "./../../assets/images/clients/12.png";
+import Logo13 from "./../../assets/images/clients/13.png";
+import Logo14 from "./../../assets/images/clients/14.png";
+import Logo15 from "./../../assets/images/clients/15.png";
+import Logo16 from "./../../assets/images/clients/16.png";
+import Logo17 from "./../../assets/images/clients/17.png";
+import Logo18 from "./../../assets/images/clients/18.png";
+import Logo19 from "./../../assets/images/clients/19.png";
+import Logo20 from "./../../assets/images/clients/20.png";
 
 // Array of logos
 const partnerLogos = [
@@ -23,12 +37,20 @@ const partnerLogos = [
   { id: 4, src: Logo4, alt: "Partner Logo 4" },
   { id: 5, src: Logo5, alt: "Partner Logo 5" },
   { id: 6, src: Logo6, alt: "Partner Logo 6" },
-  { id: 7, src: Logo1, alt: "Partner Logo 1" },
-  { id: 8, src: Logo2, alt: "Partner Logo 2" },
-  { id: 9, src: Logo3, alt: "Partner Logo 3" },
-  { id: 10, src: Logo4, alt: "Partner Logo 4" },
-  { id: 11, src: Logo5, alt: "Partner Logo 5" },
-  { id: 12, src: Logo6, alt: "Partner Logo 6" },
+  { id: 7, src: Logo7, alt: "Partner Logo 1" },
+  { id: 8, src: Logo8, alt: "Partner Logo 2" },
+  { id: 9, src: Logo9, alt: "Partner Logo 3" },
+  { id: 10, src: Logo10, alt: "Partner Logo 4" },
+  { id: 11, src: Logo11, alt: "Partner Logo 5" },
+  { id: 12, src: Logo12, alt: "Partner Logo 6" },
+  { id: 12, src: Logo13, alt: "Partner Logo 6" },
+  { id: 12, src: Logo14, alt: "Partner Logo 6" },
+  { id: 12, src: Logo15, alt: "Partner Logo 6" },
+  { id: 12, src: Logo16, alt: "Partner Logo 6" },
+  { id: 12, src: Logo17, alt: "Partner Logo 6" },
+  { id: 12, src: Logo18, alt: "Partner Logo 6" },
+  { id: 12, src: Logo19, alt: "Partner Logo 6" },
+  { id: 12, src: Logo20, alt: "Partner Logo 6" },
 ];
 
 export default function PartnersClients() {
