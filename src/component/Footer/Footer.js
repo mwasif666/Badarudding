@@ -17,7 +17,7 @@ class Footer extends Component {
       links: [
         {
           id: 1,
-          title: "Quic Links",
+          title: "Quick Links",
           child: [
             { title: "About Us", link: "/about" },
             { title: "Our Team", link: "/about#team-section" },
