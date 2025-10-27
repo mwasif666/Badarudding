@@ -6,6 +6,7 @@ import ContactForm from "../ContactForm";
 import Vision from "./Vision";
 import Chooseus from "./Chooseus";
 import PartnersClients from "../About/PartnersClients";
+import LinkedInSection from "./Linkedin";
 
 // Import Sections
 const Navbar = React.lazy(() => import("../../component/Navbar/NavBar"));
@@ -48,6 +49,7 @@ class Layout7 extends Component {
           {/* Mode Switch */}
           <PartnersClients />
           <ContactForm />
+          <LinkedInSection />
           <Switch />
         </Suspense>
       </React.Fragment>
