@@ -10,7 +10,7 @@ import { BiGeoAlt, BiGeo, BiTelephone, BiEnvelope } from "react-icons/bi";
 
 const ContactForm = () => {
   return (
-    <section className={styles.ContactForm} id="Contact">
+    <section className={styles.ContactForm}>
       <div className="container">
         <div className="row align-items-center">
           {/* Left Side */}
