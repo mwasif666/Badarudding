@@ -5,6 +5,7 @@ import AccordionCustomer from "../../component/AccordionCustomer";
 import ContactForm from "../ContactForm";
 import Vision from "./Vision";
 import Chooseus from "./Chooseus";
+import PartnersClients from "../About/PartnersClients";
 
 // Import Sections
 const Navbar = React.lazy(() => import("../../component/Navbar/NavBar"));
@@ -45,6 +46,7 @@ class Layout7 extends Component {
           {/* <Footer /> */}
 
           {/* Mode Switch */}
+          <PartnersClients />
           <ContactForm />
           <Switch />
         </Suspense>
