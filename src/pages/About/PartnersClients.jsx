@@ -85,7 +85,7 @@ export default function PartnersClients() {
       className={`${styles.wrapper}`}
       aria-labelledby="partners-heading"
     >
-      <div className="container">
+      <div className="container-fluid p-0">
         <div className="row justify-content-center">
           <div className="col-12 col-lg-10 text-center">
             <h2 id="partners-heading" className={styles.title}>
