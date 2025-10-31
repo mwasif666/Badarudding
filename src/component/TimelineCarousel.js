@@ -63,15 +63,15 @@ const TimelineCarousel = () => {
         "https://cdn.pixabay.com/photo/2022/08/29/07/44/port-7418239_1280.jpg",
       captionPosition: "end",
     },
-    {
-      year: "2025",
-      title: "Future Expansion",
-      description:
-        "Badruddin is planning further expansion by 2025, including new terminals and partnerships, to enhance its position as a leading regional port operator.",
-      image:
-        "https://cdn.pixabay.com/photo/2019/08/26/10/10/dockland-4431309_640.jpg",
-      captionPosition: "start",
-    },
+    // {
+    //   year: "2025",
+    //   title: "Future Expansion",
+    //   description:
+    //     "Badruddin is planning further expansion by 2025, including new terminals and partnerships, to enhance its position as a leading regional port operator.",
+    //   image:
+    //     "https://cdn.pixabay.com/photo/2019/08/26/10/10/dockland-4431309_640.jpg",
+    //   captionPosition: "start",
+    // },
   ];
 
   const goToSlide = (index) => {

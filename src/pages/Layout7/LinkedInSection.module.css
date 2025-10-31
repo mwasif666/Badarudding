@@ -5,43 +5,54 @@
 }
 
 .container {
-  max-width: 1100px;
-}
-
-.row {
+  background-image: url("../../assets/images/mobilebanner.jpg") !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px !important;
+  height: 400px;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   border-radius: 6px;
   overflow: hidden;
   background: var(--main);
+  z-index: 99;
 }
 
-.left {
+/* .left {
   min-height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 30px;
+} */
+
+.mobileImage {
+  opacity: 0;
 }
 
 .linkedinIconWrap {
-  width: 200px;
-  height: 200px;
+
+  width: 50px;
+  height: 50px;
   border-radius: 12px;
   background: var(--main);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .linkedinIcon {
   color: #fff;
-  width: 200px;
-  height: 200px;
+  width: 50px;
+  height: 50px;
 }
 
 .right {
+  /* background-color: blueviolet !important; */
+  /* background-color: blue !important; */
+
   color: #fff;
-  padding: 36px 40px;
+  padding: 0px 40px;
   min-height: 200px;
   position: relative;
 }
@@ -109,13 +120,26 @@
   .row {
     flex-direction: column;
   }
-  .left,
-  .right {
-    min-height: 150px;
+
+  .container {
+    background-image: none !important;
+    background-color: #008951 !important;
+    z-index: 9;
   }
+
+  .right {
+    margin-top: -15% !important;
+    text-align: center;
+    min-height: 500px;
+  }
+  .linkedinIconWrap{
+    margin: auto;
+  }
+
   .title {
     font-size: 24px;
   }
+
   .contentWrap {
     text-align: center;
   }
