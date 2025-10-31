@@ -1,5 +1,13 @@
 import React from "react";
 import styles from "./Chooseus.module.css";
+import { GoOrganization } from "react-icons/go";
+import { VscOrganization } from "react-icons/vsc";
+import { GrUserWorker } from "react-icons/gr";
+import { PiBagFill } from "react-icons/pi";
+
+
+
+
 
 const Chooseus = () => {
   return (
@@ -23,7 +31,7 @@ const Chooseus = () => {
                 </p>
               </div>
 
-              <div className="row g-4">
+              <div className="row justify-content-center g-4">
                 {/* Feature 1 */}
                 <div className="col-md-6 col-lg-4">
                   <div className={styles.featureCard} data-aos="fade-left">
@@ -145,18 +153,8 @@ const Chooseus = () => {
                 </div>
 
                 {/* Feature 9 */}
-                <div className="col-md-6 col-lg-4">
-                  <div className={styles.featureCard} data-aos="fade-right">
-                    <i className={`fas fa-leaf ${styles.featureIcon}`}></i>
-                    <h4 className={styles.featureTitle}>
-                      Scalable & Sustainable Practices
-                    </h4>
-                    <p className={styles.featureDescription}>
-                      Eco-friendly and scalable solutions that grow with your
-                      business needs.
-                    </p>
-                  </div>
-                </div>
+              
+
               </div>
 
               {/* Stats Section */}
@@ -164,26 +162,30 @@ const Chooseus = () => {
                 <div className="row text-center">
                   <div className="col-6 col-md-3">
                     <div className={styles.statItem}>
-                      <div className={styles.statNumber}>99.9%</div>
-                      <div className={styles.statLabel}>Picking Accuracy</div>
+                      <div className={styles.statIcon}><GoOrganization /></div>
+                      <div className={styles.statNumber}>25+</div>
+                      <div className={styles.statLabel}>Year of Experiences</div>
                     </div>
                   </div>
                   <div className="col-6 col-md-3">
                     <div className={styles.statItem}>
-                      <div className={styles.statNumber}>24/7</div>
-                      <div className={styles.statLabel}>Customer Support</div>
+                      <div className={styles.statIcon}><VscOrganization /></div>
+                      <div className={styles.statNumber}>2,000+</div>
+                      <div className={styles.statLabel}>Client Served</div>
                     </div>
                   </div>
                   <div className="col-6 col-md-3">
                     <div className={styles.statItem}>
-                      <div className={styles.statNumber}>100%</div>
-                      <div className={styles.statLabel}>Secure Facilities</div>
+                      <div className={styles.statIcon}><GrUserWorker /></div>
+                      <div className={styles.statNumber}>350+</div>
+                      <div className={styles.statLabel}>Employees</div>
                     </div>
                   </div>
                   <div className="col-6 col-md-3">
                     <div className={styles.statItem}>
-                      <div className={styles.statNumber}>Global</div>
-                      <div className={styles.statLabel}>Shipping Network</div>
+                      <div className={styles.statIcon}><PiBagFill /></div>
+                      <div className={styles.statNumber}>9</div>
+                      <div className={styles.statLabel}>Companies</div>
                     </div>
                   </div>
                 </div>

@@ -39,12 +39,12 @@ const BlogHeader = () => {
               Decades of Experience, Modern-Day Execution
             </h2>
             <p>
-              Founded in 1966, Badruddin Stevedoring has grown alongside the
-              evolving needs of global trade. Today, container volumes continue
-              to increase as Pakistan strengthens its role in regional shipping
-              and logistics. Our decades of experience enable us to adapt
-              quickly, manage complexity, and implement best practices in
-              containerized cargo handling
+              Badruddin Stevedoring has grown alongside the evolving needs of
+              global trade. Today, container volumes continue to increase as
+              Pakistan strengthens its role in regional shipping and logistics.
+              Our decades of experience enable us to adapt quickly, manage
+              complexity, and implement best practices in containerized cargo
+              handling
               <br />
             </p>
             <p>

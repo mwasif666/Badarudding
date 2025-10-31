@@ -88,7 +88,7 @@ const Services = () => {
             {/* <h2 className={`fw-bold ${styles.heading} `}>{heading}</h2> */}
             <div class="intro-text">
               <h3 className={`fw-bold ${styles.heading} `}>
-                Full Service Bonded Warehouse
+                Full Service Bonded Wearhouse
               </h3>
               <p
                 style={{
@@ -98,11 +98,10 @@ const Services = () => {
                   padding: "0 20px",
                 }}
               >
-                We always offer tailored advice and actions. We know that every
-                business is different, and no one knows your business better
-                than you. That's why we personalize every part of our approach
-                to logistics and bonded warehousing. We can easily scale up or
-                down to match your unique process.
+                Strategically located inside Karachi Port, at Badaruddin we are
+                able to provide efficient, secure and personalized warehousing
+                services catering to the needs of our local and
+                international clientele.
               </p>
               <h3 className={`fw-bold mt-5 ${styles.heading} `}>
                 What we offer

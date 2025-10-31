@@ -9,15 +9,15 @@ const TimelineCarousel = () => {
   const intervalRef = useRef(null);
 
   const slides = [
-    {
-      year: "1966",
-      title: "Founded",
-      description:
-        "Badruddin Stevedoring began operations in Karachi, establishing itself as a trusted provider of port logistics and cargo handling in Pakistan since 1966.",
-      image:
-        "https://cdn.pixabay.com/photo/2016/09/04/08/13/harbour-crane-1643476_1280.jpg",
-      captionPosition: "start",
-    },
+    // {
+    //   year: "1966",
+    //   title: "Founded",
+    //   description:
+    //     "Badruddin Stevedoring began operations in Karachi, establishing itself as a trusted provider of port logistics and cargo handling in Pakistan since 1966.",
+    //   image:
+    //     "https://cdn.pixabay.com/photo/2016/09/04/08/13/harbour-crane-1643476_1280.jpg",
+    //   captionPosition: "start",
+    // },
     {
       year: "2001",
       title: "Integration into Waterlink Group",

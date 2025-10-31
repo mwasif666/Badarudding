@@ -55,7 +55,7 @@ class Footer extends Component {
                       color: "white",
                     }}
                   >
-                    Established in 1966, BADARUDDIN STEVEDORING (PVT) LTD has
+                   BADARUDDIN STEVEDORING (PVT) LTD has
                     grown into a premier logistics company known for its
                     expertise in stevedoring, break bulk handling, and cargo
                     operations.We’ve supported the evolving needs of shipping

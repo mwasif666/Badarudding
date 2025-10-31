@@ -4,12 +4,15 @@
   padding-top: 150px;
   padding-bottom: 30px;
 }
+.container{
+  padding-left: 30px;
+}
 .headerMain {
   font-size: 6rem;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  justify-content: center;
+  /* justify-content: center; */
   color: var(--main);
 }
 .headerPara {
