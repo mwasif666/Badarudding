@@ -88,7 +88,8 @@ const Services = () => {
             {/* <h2 className={`fw-bold ${styles.heading} `}>{heading}</h2> */}
             <div class="intro-text">
               <h3 className={`fw-bold ${styles.heading} `}>
-                Full Service Bonded Wearhouse
+                 Full Service Bonded Wearhouse
+
               </h3>
               <p
                 style={{
@@ -102,6 +103,7 @@ const Services = () => {
                 able to provide efficient, secure and personalized warehousing
                 services catering to the needs of our local and
                 international clientele.
+
               </p>
               <h3 className={`fw-bold mt-5 ${styles.heading} `}>
                 What we offer

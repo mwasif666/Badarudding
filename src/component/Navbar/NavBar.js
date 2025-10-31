@@ -247,20 +247,47 @@ const NavbarPage = () => {
       {/* Inline styles for the offcanvas */}
       <style>
         {`
-          .offcanvas.offcanvas-end {
-            width: 280px !important;
-            background-color: #fff;
-          }
-          .offcanvas-header .btn-close {
-            font-size: 1.2rem;
-          }
-          .navbar-toggler {
-            border: none;
-            padding: 0.25rem;
-          }
-          .navbar-toggler:focus {
-            box-shadow: none;
-          }
+          
+
+
+
+          /* Navbar links ke base styles */
+.nav-link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+}
+
+/* Active link underline effect */
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;  /* distance from text */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+/* Optional: hover underline animation */
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+
+
           @media (max-width: 991px) {
             .navbar-collapse {
               display: none !important;

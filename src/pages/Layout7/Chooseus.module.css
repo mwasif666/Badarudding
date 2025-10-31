@@ -103,17 +103,24 @@
 }
 
 .statsSection {
-  background: linear-gradient(135deg, var(--main) 0%, var(--main) 100%);
+  /* background: linear-gradient(135deg, var(--main) 0%, var(--main) 100%); */
   padding: 60px 0;
   margin-top: 60px;
   border-radius: 10px;
-  color: white;
+  color: black;
 }
 
 .statItem {
+  /* background-color: #1a5276; */
   text-align: center;
   padding: 15px;
 }
+:global(.row.text-center > .col-6:nth-child(1)) .statItem {
+  background-color: #008951;
+  color: white;
+  border-radius: 15px;
+}
+
 
 .statNumber {
   font-size: 2.5rem;
