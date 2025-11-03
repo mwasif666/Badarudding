@@ -17,7 +17,7 @@ const About = () => {
         <TimelineCarousel />
         <Vision />
       </div>
-      <CardsAbout />
+      {/* <CardsAbout /> */}
       <PartnersClients />
       <LeadershipTeam />
       <Chooseus />

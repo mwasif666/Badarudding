@@ -162,30 +162,30 @@ const Chooseus = () => {
                 <div className="row text-center">
                   <div className="col-6 col-md-3">
                     <div className={styles.statItem}>
-                      <div className={styles.statIcon}><GoOrganization /></div>
-                      <div className={styles.statNumber}>25+</div>
+                      <div className={`${styles.statIcon } ${styles.statIcon1}`}><GoOrganization /></div>
+                      <div className={`${styles.statNumber} ${styles.statNumber1}`}>50+</div>
                       <div className={styles.statLabel}>Year of Experiences</div>
                     </div>
                   </div>
                   <div className="col-6 col-md-3">
                     <div className={styles.statItem}>
                       <div className={styles.statIcon}><VscOrganization /></div>
-                      <div className={styles.statNumber}>2,000+</div>
-                      <div className={styles.statLabel}>Client Served</div>
+                      <div className={styles.statNumber}>250+</div>
+                      <div className={styles.statLabel}>Satisfied Clients</div>
                     </div>
                   </div>
                   <div className="col-6 col-md-3">
                     <div className={styles.statItem}>
                       <div className={styles.statIcon}><GrUserWorker /></div>
-                      <div className={styles.statNumber}>350+</div>
+                      <div className={styles.statNumber}>120+</div>
                       <div className={styles.statLabel}>Employees</div>
                     </div>
                   </div>
                   <div className="col-6 col-md-3">
                     <div className={styles.statItem}>
                       <div className={styles.statIcon}><PiBagFill /></div>
-                      <div className={styles.statNumber}>9</div>
-                      <div className={styles.statLabel}>Companies</div>
+                      <div className={styles.statNumber}>75k+</div>
+                      <div className={styles.statLabel}>Shipments</div>
                     </div>
                   </div>
                 </div>

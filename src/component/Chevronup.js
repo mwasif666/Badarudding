@@ -22,7 +22,7 @@ const ChevronUp = ({
   width = 28,
   height = 28,
   strokeWidth = 2,
-  stroke = "#ffffff",
+  stroke = "#FFFFFF ",
   ...props
 }) => {
   const controls = useAnimation();

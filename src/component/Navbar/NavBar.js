@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+// import { Container } from "reactstrap";
+import { IoCall } from "react-icons/io5";
 import {
   Nav,
   NavbarBrand,
@@ -90,163 +92,207 @@ const NavbarPage = () => {
   };
 
   return (
-    <React.Fragment>
-      <nav
-        expand="lg"
-        fixed="top"
-        className={`navbar navbar-expand-lg fixed-top navbar-custom ${navClass}`}
-        id="navbar"
-      >
-        <Container>
-          {/* Logo */}
-          <NavbarBrand href="/">
-            <Link
-              to="/"
-              className="logo-link rounded-pill"
+    <>
+      <React.Fragment>
+        <div className="navSection">
+          <div className="navTop">
+            <div
               style={{
-                padding: "8px 16px",
-                display: "inline-block",
-                textDecoration: "none",
+                background: "black",
+                color: "white",
+                fontSize: "14px",
+                padding: "6px 0",
               }}
             >
-              <div className="image-logo d-flex align-items-center gap-2">
-                <img
-                  src="./logo2.png"
-                  style={{
-                    width: "50px",
-                    height: "40px",
-                  }}
-                  alt=""
-                />
-                <span>Badaruddin</span>
-              </div>
-            </Link>
-          </NavbarBrand>
+              <Container className="d-flex justify-content-end align-items-center flex-wrap">
+                {/* Phone Section */}
+                <div className="d-flex align-items-center mb-2 mb-md-0 me-4">
+                  <IoCall size={16} className="me-2 text-" style={{ color: "white" }} />
+                  <a
+                    href="tel:+92021111111550"
+                    style={{ color: "white", textDecoration: "none" }}
+                  >
+                    UAN # +92 (021) 111 111 550
+                  </a>
+                </div>
 
-          {/* Desktop menu - hidden on mobile */}
-          <div
-            className="d-none d-lg-flex align-items-center"
-            style={{
-              gap: "16px",
-            }}
+                {/* Email Section */}
+                <div className="d-flex align-items-center">
+                  <FeatherIcon
+                    icon="mail"
+                    size={16}
+                    className="me-2 text-" style={{ color: "white" }}
+                  />
+                  <a
+                    href="mailto:info@badaruddin.net"
+                    style={{ color: "white", textDecoration: "none" }}
+                  >
+                    info@badaruddin.net
+                  </a>
+                </div>
+              </Container>
+            </div>
+          </div>
+
+          <nav
+            expand="lg"
+            fixed="top"
+            className={`navbar main-nav-top navbar-expand-lg fixed-top navbar-custom ${navClass}`}
+            id="navbar"
           >
-            <Nav className="m-auto navbar-center" id="mySidenav">
+            <Container>
+              {/* Logo */}
+              <NavbarBrand href="/">
+                <Link
+                  to="/"
+                  className="logo-link rounded-pill"
+                  style={{
+                    padding: "8px 16px",
+                    display: "inline-block",
+                    textDecoration: "none",
+                  }}
+                >
+                  <div className="image-logo d-flex align-items-center gap-2">
+                    <img
+                      src="./logo2.png"
+                      style={{
+                        width: "50px",
+                        height: "40px",
+                      }}
+                      alt=""
+                    />
+                    <span>Badaruddin</span>
+                  </div>
+                </Link>
+              </NavbarBrand>
+
+              {/* Desktop menu - hidden on mobile */}
+              <div
+                className="d-none d-lg-flex align-items-center"
+                style={{
+                  gap: "16px",
+                }}
+              >
+                <Nav className="m-auto navbar-center" id="mySidenav">
+                  {navItems.map((item) => (
+                    <NavItem
+                      key={item.id}
+                      className={
+                        location.pathname === item.path ? "active" : ""
+                      }
+                    >
+                      {item.path === "/#customer" ? (
+                        <a
+                          href="/#customer"
+                          onClick={handleCustomerClick}
+                          className="nav-link"
+                        >
+                          {item.navheading}
+                        </a>
+                      ) : (
+                        <Link
+                          className={`nav-link ${
+                            location.pathname === item.path ? "active" : ""
+                          }`}
+                          to={item.path}
+                        >
+                          {item.navheading}
+                        </Link>
+                      )}
+                    </NavItem>
+                  ))}
+                </Nav>
+
+                <Link
+                  to="/contact"
+                  className="btn rounded-pill nav-btn ms-lg-3 contactnavbtn"
+                >
+                  Contact Us
+                </Link>
+              </div>
+
+              {/* Mobile menu toggle */}
+              <NavbarToggler onClick={toggleOffcanvas} className="d-lg-none">
+                <FeatherIcon icon="menu" />
+              </NavbarToggler>
+            </Container>
+          </nav>
+        </div>
+
+        {/* Offcanvas for mobile */}
+        <Offcanvas
+          isOpen={isOffcanvasOpen}
+          toggle={toggleOffcanvas}
+          direction="end"
+          style={{ width: "280px" }}
+          className="d-lg-none"
+        >
+          <OffcanvasHeader toggle={toggleOffcanvas} className="border-bottom">
+            <div className="d-flex align-items-center">
+              <Link
+                to="/"
+                className="logo-link rounded-pill"
+                onClick={handleNavClick}
+              >
+                Badaruddin
+              </Link>
+            </div>
+          </OffcanvasHeader>
+          <OffcanvasBody>
+            <Nav navbar vertical className="mt-4">
               {navItems.map((item) => (
                 <NavItem
                   key={item.id}
-                  className={location.pathname === item.path ? "active" : ""}
+                  className={`my-2 ${
+                    location.pathname === item.path ? "active" : ""
+                  }`}
                 >
                   {item.path === "/#customer" ? (
                     <a
                       href="/#customer"
-                      onClick={handleCustomerClick}
+                      onClick={(e) => {
+                        handleCustomerClick(e);
+                        handleNavClick();
+                      }}
                       className="nav-link"
+                      style={{
+                        color: "#02492e",
+                        fontWeight: "500",
+                      }}
                     >
                       {item.navheading}
                     </a>
                   ) : (
                     <Link
-                      className={`nav-link ${
-                        location.pathname === item.path ? "active" : ""
-                      }`}
+                      className="nav-link"
                       to={item.path}
+                      onClick={handleNavClick}
+                      style={{
+                        color: "#02492e",
+                        fontWeight: "500",
+                      }}
                     >
                       {item.navheading}
                     </Link>
                   )}
                 </NavItem>
               ))}
-            </Nav>
-
-            <Link
-              to="/contact"
-              className="btn rounded-pill nav-btn ms-lg-3 contactnavbtn"
-            >
-              Contact Us
-            </Link>
-          </div>
-
-          {/* Mobile menu toggle */}
-          <NavbarToggler onClick={toggleOffcanvas} className="d-lg-none">
-            <FeatherIcon icon="menu" />
-          </NavbarToggler>
-        </Container>
-      </nav>
-
-      {/* Offcanvas for mobile */}
-      <Offcanvas
-        isOpen={isOffcanvasOpen}
-        toggle={toggleOffcanvas}
-        direction="end"
-        style={{ width: "280px" }}
-        className="d-lg-none"
-      >
-        <OffcanvasHeader toggle={toggleOffcanvas} className="border-bottom">
-          <div className="d-flex align-items-center">
-            <Link
-              to="/"
-              className="logo-link rounded-pill"
-              onClick={handleNavClick}
-            >
-              Badaruddin
-            </Link>
-          </div>
-        </OffcanvasHeader>
-        <OffcanvasBody>
-          <Nav navbar vertical className="mt-4">
-            {navItems.map((item) => (
-              <NavItem
-                key={item.id}
-                className={`my-2 ${
-                  location.pathname === item.path ? "active" : ""
-                }`}
-              >
-                {item.path === "/#customer" ? (
-                  <a
-                    href="/#customer"
-                    onClick={(e) => {
-                      handleCustomerClick(e);
-                      handleNavClick();
-                    }}
-                    className="nav-link"
-                    style={{
-                      color: "#02492e",
-                      fontWeight: "500",
-                    }}
-                  >
-                    {item.navheading}
-                  </a>
-                ) : (
-                  <Link
-                    className="nav-link"
-                    to={item.path}
-                    onClick={handleNavClick}
-                    style={{
-                      color: "#02492e",
-                      fontWeight: "500",
-                    }}
-                  >
-                    {item.navheading}
-                  </Link>
-                )}
+              <NavItem className="mt-4">
+                <Link
+                  to="/contact"
+                  className="btn btn-sm rounded-pill nav-btn w-100 text-center"
+                  onClick={handleNavClick}
+                >
+                  Contact Us
+                </Link>
               </NavItem>
-            ))}
-            <NavItem className="mt-4">
-              <Link
-                to="/contact"
-                className="btn btn-sm rounded-pill nav-btn w-100 text-center"
-                onClick={handleNavClick}
-              >
-                Contact Us
-              </Link>
-            </NavItem>
-          </Nav>
-        </OffcanvasBody>
-      </Offcanvas>
+            </Nav>
+          </OffcanvasBody>
+        </Offcanvas>
 
-      {/* Inline styles for the offcanvas */}
-      <style>
-        {`
+        {/* Inline styles for the offcanvas */}
+        <style>
+          {`
           
 
 
@@ -294,8 +340,9 @@ const NavbarPage = () => {
             }
           }
         `}
-      </style>
-    </React.Fragment>
+        </style>
+      </React.Fragment>
+    </>
   );
 };
 

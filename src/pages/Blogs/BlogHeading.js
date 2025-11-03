@@ -9,7 +9,7 @@ const BlogHeader = () => {
       <h6 className={style.headersmall}>Blog // News</h6>
       <div className={style.BlogHeading}>
         <h1 className={style.headerMain}>
-          How Badruddin Stevedoring Handles Over 75,000 Containers Annually with
+          How Badaruddin Stevedoring Handles Over 75,000 Containers Annually with
           Precision & Efficiency
         </h1>
       </div>
@@ -17,7 +17,7 @@ const BlogHeader = () => {
         <div className="d-flex justify-content-center">
           <p className={style.para}>
             In the world of port logistics, container handling is one of the
-            most critical operations and one of the most demanding. At Badruddin
+            most critical operations and one of the most demanding. At Badaruddin
             Stevedoring, we proudly manage and move over 75,000 containers every
             year across major ports in Pakistan. This scale is a testament to
             our operational capacity, advanced infrastructure, and unwavering
@@ -39,7 +39,7 @@ const BlogHeader = () => {
               Decades of Experience, Modern-Day Execution
             </h2>
             <p>
-              Founded in 1966, Badruddin Stevedoring has grown alongside the
+              Founded in 1966, Badaruddin Stevedoring has grown alongside the
               evolving needs of global trade. Today, container volumes continue
               to increase as Pakistan strengthens its role in regional shipping
               and logistics. Our decades of experience enable us to adapt
@@ -129,7 +129,7 @@ const BlogHeader = () => {
               shipping line, container handling speed and reliability directly
               impact your bottom line. Delays at the port translate to increased
               storage fees, missed connections, and dissatisfied customers. With
-              Badruddin Stevedoring, you benefit from:
+              Badaruddin Stevedoring, you benefit from:
             </p>
 
             <ul className={style.benefitsList}>
@@ -168,14 +168,14 @@ const BlogHeader = () => {
               South Asia, we are scaling our container handling operations to
               match that growth. From expansion in port handling capacity to
               exploring inland container depots (ICDs) and intermodal
-              connectivity, Badruddin Stevedoring is aligned with the future of
+              connectivity, Badaruddin Stevedoring is aligned with the future of
               logistics in the region.
             </p>
             <h2 className={style.headersec}>Partner With Confidence</h2>
 
             <p>
               Over 75,000 containers a year. Hundreds of satisfied clients.
-              Decades of trust. Partner with Badruddin Stevedoring for container
+              Decades of trust. Partner with Badaruddin Stevedoring for container
               operations that are fast, secure, and fully optimized for your
               logistics needs.
             </p>

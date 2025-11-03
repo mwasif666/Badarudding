@@ -13,7 +13,7 @@ const TimelineCarousel = () => {
       year: "1966",
       title: "Founded",
       description:
-        "Badruddin Stevedoring began operations in Karachi, establishing itself as a trusted provider of port logistics and cargo handling in Pakistan since 1966.",
+        "Badaruddin Stevedoring began operations in Karachi, establishing itself as a trusted provider of port logistics and cargo handling in Pakistan since 1966.",
       image:
         "https://cdn.pixabay.com/photo/2016/09/04/08/13/harbour-crane-1643476_1280.jpg",
       captionPosition: "start",
@@ -22,7 +22,7 @@ const TimelineCarousel = () => {
       year: "2001",
       title: "Integration into Waterlink Group",
       description:
-        "In 2001, Badruddin became part of the Waterlink Group, significantly expanding its regional presence and capabilities in maritime logistics and shipping.",
+        "In 2001, Badaruddin became part of the Waterlink Group, significantly expanding its regional presence and capabilities in maritime logistics and shipping.",
       image:
         "https://cdn.pixabay.com/photo/2019/08/26/10/10/dockland-4431309_640.jpg",
       captionPosition: "end",
@@ -31,7 +31,7 @@ const TimelineCarousel = () => {
       year: "2010",
       title: "Modernization",
       description:
-        "Badruddin upgraded its fleet and facilities in 2010, incorporating the latest shipping technology and expanding operations across international routes.",
+        "Badaruddin upgraded its fleet and facilities in 2010, incorporating the latest shipping technology and expanding operations across international routes.",
       image:
         "https://cdn.pixabay.com/photo/2016/09/06/22/21/harbour-cranes-1650374_640.jpg",
       captionPosition: "start",
@@ -40,7 +40,7 @@ const TimelineCarousel = () => {
       year: "2015",
       title: "Global Partnerships",
       description:
-        "By 2015, strategic partnerships with major global shipping lines allowed Badruddin to increase cargo throughput and service quality at Karachi port.",
+        "By 2015, strategic partnerships with major global shipping lines allowed Badaruddin to increase cargo throughput and service quality at Karachi port.",
       image:
         "https://cdn.pixabay.com/photo/2018/06/24/03/06/harbor-3493887_640.jpg",
       captionPosition: "end",
@@ -49,7 +49,7 @@ const TimelineCarousel = () => {
       year: "2020",
       title: "Sustainability",
       description:
-        "In 2020, Badruddin launched green initiatives at the port, investing in cleaner energy cranes and eco-friendly handling processes to reduce environmental impact.",
+        "In 2020, Badaruddin launched green initiatives at the port, investing in cleaner energy cranes and eco-friendly handling processes to reduce environmental impact.",
       image:
         "https://cdn.pixabay.com/photo/2014/10/11/14/01/harbour-cranes-484594_640.jpg",
       captionPosition: "start",
@@ -67,7 +67,7 @@ const TimelineCarousel = () => {
     //   year: "2025",
     //   title: "Future Expansion",
     //   description:
-    //     "Badruddin is planning further expansion by 2025, including new terminals and partnerships, to enhance its position as a leading regional port operator.",
+    //     "Badaruddin is planning further expansion by 2025, including new terminals and partnerships, to enhance its position as a leading regional port operator.",
     //   image:
     //     "https://cdn.pixabay.com/photo/2019/08/26/10/10/dockland-4431309_640.jpg",
     //   captionPosition: "start",

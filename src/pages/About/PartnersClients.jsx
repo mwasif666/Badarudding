@@ -92,7 +92,7 @@ export default function PartnersClients() {
               Our Partners & Clients
             </h2>
             <p className={`mx-auto ${styles.subtitle}`}>
-              Badruddin Stevedoring serves major shipping lines, logistics
+              Badaruddin Stevedoring serves major shipping lines, logistics
               providers, government projects, and freight forwarders across
               Pakistan. Through Waterlink Group, we collaborate closely with
               entities in air freight, sea freight, chartering, and customs

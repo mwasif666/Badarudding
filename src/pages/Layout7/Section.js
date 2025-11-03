@@ -56,7 +56,7 @@ class Section extends Component {
                   Expert Port Logistics <br /> and Cargo Handling
                 </h1>
                 <p className="text-white para-desc mx-auto">
-                  For decades, Badaruddin has been at the forefront of bonded
+                  Since 1966, Badaruddin has been at the forefront of bonded
                   warehousing and logistics at Karachi Port, providing trusted,
                   secure, and flexible solutions for international trade. Our
                   services are tailored to the needs of both importers and

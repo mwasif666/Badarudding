@@ -69,7 +69,7 @@ function ArticleCard({ item }) {
 
 export default function RelatedArticles({
   title = "Related Articles",
-  subtitle = "Explore more about how Badruddin Stevedoring powers Pakistan’s logistics sector with trusted expertise and innovative solutions. Discover our full range of capabilities and the impact we’ve made across the industry.",
+  subtitle = "Explore more about how Badaruddin Stevedoring powers Pakistan’s logistics sector with trusted expertise and innovative solutions. Discover our full range of capabilities and the impact we’ve made across the industry.",
   items = [],
 }) {
   const prevRef = useRef(null);

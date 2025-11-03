@@ -317,6 +317,16 @@ footer {
 .whatsapp-icon {
   margin-top: 2px;
 }
+.main-nav-top{
+  top: 30px !important;
+}
+.nav-sticky.navbar{
+  top: 0 !important;
+}
+#root .navSection:nth-of-type(2) .navTop {
+  display: none !important;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

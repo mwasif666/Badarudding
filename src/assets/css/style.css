@@ -40,8 +40,9 @@
   --bs-dark-rgb: hexToRGB(#29344a);
   --bs-light: #fbfbfb;
   --bs-light-rgb: hexToRGB(#fbfbfb);
-  --bs-body-bg: #ffffff;
-  --bs-body-bg-rgb: hexToRGB(#ffffff);
+  --bs-body-bg: #FFFFFF ;
+  /* --bs-body-bg: red ; */
+  --bs-body-bg-rgb: hexToRGB(#FFFFFF );
   --bs-black: #000;
   --bs-black-rgb: hexToRGB(#000);
   --bs-white: #fff;
@@ -61,7 +62,7 @@ a {
 body {
   font-family: "Open Sans", sans-serif;
   color: #29344a;
-  background: var(--bs-body-bg);
+  background: var(--bs-body-bg) !important;
   font-size: 15px;
 }
 
@@ -127,7 +128,7 @@ h6 {
 }
 
 .icon-fill-body-bg {
-  fill: #ffffff;
+  fill: #FFFFFF ;
 }
 
 .icon-fill-black {
@@ -797,8 +798,8 @@ h6 {
   color: #fff !important;
 }
 .btn.btn-body-bg {
-  background-color: #ffffff !important;
-  border: 1px solid #ffffff !important;
+  background-color: #FFFFFF  !important;
+  border: 1px solid #FFFFFF  !important;
   color: #fff;
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
 }
@@ -814,7 +815,7 @@ h6 {
 }
 .btn.btn-soft-body-bg {
   background-color: white !important;
-  color: #ffffff;
+  color: #FFFFFF ;
 }
 .btn.btn-soft-body-bg:hover,
 .btn.btn-soft-body-bg:focus,
@@ -825,16 +826,16 @@ h6 {
   transform: translateY(-4px);
 }
 .btn.btn-outline-body-bg {
-  border: 1px solid #ffffff !important;
-  color: #ffffff !important;
+  border: 1px solid #FFFFFF  !important;
+  color: #FFFFFF  !important;
 }
 .btn.btn-outline-body-bg:hover,
 .btn.btn-outline-body-bg:focus,
 .btn.btn-outline-body-bg.focus,
 .btn.btn-outline-body-bg:active,
 .btn.btn-outline-body-bg.active {
-  background-color: #ffffff !important;
-  border: 1px solid #ffffff !important;
+  background-color: #FFFFFF  !important;
+  border: 1px solid #FFFFFF  !important;
   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.5);
   color: #fff !important;
 }
@@ -1051,14 +1052,14 @@ h6 {
 }
 
 .badge.badge-body-bg {
-  background: #ffffff;
+  background: #FFFFFF ;
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
   color: #fff;
 }
 .badge.badge-soft-body-bg {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
-  color: #ffffff;
+  color: #FFFFFF ;
 }
 
 .badge.badge-black {
@@ -1195,11 +1196,11 @@ h6 {
 }
 
 .text-body-bg {
-  color: #ffffff !important;
+  color: #FFFFFF  !important;
 }
 
 .bg-body-bg {
-  background-color: #ffffff !important;
+  background-color: #FFFFFF  !important;
 }
 
 .bg-soft-body-bg {
@@ -1964,7 +1965,7 @@ h6 {
 }
 
 .team-social-icon:hover.h-body-bg {
-  color: #ffffff;
+  color: #FFFFFF ;
 }
 
 .team-social-icon:hover.h-black {
@@ -2073,7 +2074,7 @@ h6 {
 }
 
 #style-switcher .bottom {
-  background: none repeat scroll 0 0 #ffffff;
+  background: none repeat scroll 0 0 #FFFFFF ;
   color: #29344a;
   padding: 0;
   position: relative;

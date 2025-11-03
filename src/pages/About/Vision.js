@@ -9,7 +9,7 @@ const Vision = () => {
       <div className="container">
         <h2 className={styles.headerPara}>Our Mission & Vision</h2>
         <p className={styles.para}>
-          At Badruddin Stevedoring, our mission and vision reflect more than
+          At Badaruddin Stevedoring, our mission and vision reflect more than
           five decades of dedication to <br /> excellence in port logistics and
           cargo handling. We are driven by a commitment to reliability, safety,{" "}
           <br /> and innovation, ensuring every client receives tailored,
