@@ -17,6 +17,13 @@
 .card {
   border-radius: 20px !important;
   background: #f7efe9 !important;
+  
+}
+.name{
+  font-size: 1.8rem;
+}
+.role,.blurb{
+  font-size: 1.3rem !important;
 }
 
 .avatarWrap {

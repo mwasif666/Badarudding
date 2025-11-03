@@ -14,77 +14,90 @@ import img6 from "../../assets/images/team/6.png";
 import img7 from "../../assets/images/team/7.png";
 import img8 from "../../assets/images/team/8.png";
 import img9 from "../../assets/images/team/3.png";
+import { div } from "motion/react-client";
 
 const team = [
   {
-    name: "Raheel Javed",
-    role: "HOD - Operations",
+    name: "For Operational Querry email us at",
+    role: "raheel.javed@badaruddin.net",
     blurb:
-      "Head of Department overseeing operations with leadership in logistics & yard activities.",
-    img: img1,
+      "+92 301 8209980",
   },
   {
-    name: "Khalique Ahmed",
-    role: "Yard Supervisor - Operations",
+    name: "For Customer Service email us at",
+    role: "huzaifa.iqbal@badaruddin.net",
     blurb:
-      "Supervises yard operations ensuring smooth handling and coordination.",
-    img: img2,
+      "+92 320 5486534",
   },
-  {
-    name: "Ayub Shah",
-    role: "Logistics Incharge - Logistics",
-    blurb:
-      "Manages logistics operations with responsibility for coordination and supply chain flow.",
-    img: img3,
-  },
-  {
-    name: "Mr. Usman",
-    role: "Warehouse Executive - Operations",
-    blurb: "Responsible for warehouse management and operational efficiency.",
-    img: img4,
-  },
-  {
-    name: "Mr. Hanif",
-    role: "Senior Officer - Export Documentation",
-    blurb:
-      "Handles export documentation and ensures compliance with international standards.",
-    img: img5,
-  },
-  {
-    name: "Huzaifa Iqbal",
-    role: "Senior Executive - Customer Service & Operations",
-    blurb:
-      "Ensures smooth operations while supporting customer service excellence.",
-    img: img6,
-  },
-  {
-    name: "Hasan Riaz",
-    role: "Operation Executive - Customer Service & Operations",
-    blurb:
-      "Coordinates operations with a focus on customer satisfaction and efficiency.",
-    img: img7,
-  },
-  {
-    name: "M. Saim",
-    role: "Logistics Assistant - Logistics",
-    blurb:
-      "Supports logistics operations ensuring timely and accurate coordination.",
-    img: img8,
-  },
-  {
-    name: "Sabih Ul Huq",
-    role: "Senior Officer - Export Documentation",
-    blurb:
-      "Expert in export documentation with attention to detail and compliance.",
-    img: img9,
-  },
+  //   {
+  //   name: "Raheel Javed",
+  //   role: "HOD - Operations",
+  //   blurb:
+  //     "Head of Department overseeing operations with leadership in logistics & yard activities.",
+  //   img: img1,
+  // },
+  // {
+  //   name: "Khalique Ahmed",
+  //   role: "Yard Supervisor - Operations",
+  //   blurb:
+  //     "Supervises yard operations ensuring smooth handling and coordination.",
+  //   img: img2,
+  // },
+  // {
+  //   name: "Ayub Shah",
+  //   role: "Logistics Incharge - Logistics",
+  //   blurb:
+  //     "Manages logistics operations with responsibility for coordination and supply chain flow.",
+  //   img: img3,
+  // },
+  // {
+  //   name: "Mr. Usman",
+  //   role: "Warehouse Executive - Operations",
+  //   blurb: "Responsible for warehouse management and operational efficiency.",
+  //   img: img4,
+  // },
+  // {
+  //   name: "Mr. Hanif",
+  //   role: "Senior Officer - Export Documentation",
+  //   blurb:
+  //     "Handles export documentation and ensures compliance with international standards.",
+  //   img: img5,
+  // },
+  // {
+  //   name: "Huzaifa Iqbal",
+  //   role: "Senior Executive - Customer Service & Operations",
+  //   blurb:
+  //     "Ensures smooth operations while supporting customer service excellence.",
+  //   img: img6,
+  // },
+  // {
+  //   name: "Hasan Riaz",
+  //   role: "Operation Executive - Customer Service & Operations",
+  //   blurb:
+  //     "Coordinates operations with a focus on customer satisfaction and efficiency.",
+  //   img: img7,
+  // },
+  // {
+  //   name: "M. Saim",
+  //   role: "Logistics Assistant - Logistics",
+  //   blurb:
+  //     "Supports logistics operations ensuring timely and accurate coordination.",
+  //   img: img8,
+  // },
+  // {
+  //   name: "Sabih Ul Huq",
+  //   role: "Senior Officer - Export Documentation",
+  //   blurb:
+  //     "Expert in export documentation with attention to detail and compliance.",
+  //   img: img9,
+  // },
 ];
 
 export default function LeadershipTeam() {
   return (
     <section id="team-section" className={`container ${styles.section}`}>
       <div className="text-center mb-4 mb-md-5" data-aos="fade-up">
-        <h2 className={styles.title}>Our Leadership & Team</h2>
+        <h2 className={styles.title}>Connect With Our Team </h2>
         <p className={`mx-auto ${styles.subheading}`}>
           Our experienced team combines decades of industry knowledge with
           modern logistics practices. Skilled professionals oversee all
@@ -98,7 +111,7 @@ export default function LeadershipTeam() {
         {team.map((m) => (
           <div
             key={m.name}
-            className="col-12 col-sm-6 col-lg-3"
+            className="col-12 col-sm-6 col-lg-6"
             data-aos="fade-up"
             data-aos-delay="100"
           >
@@ -112,14 +125,15 @@ export default function LeadershipTeam() {
 
 function MemberCard({ name, role, blurb, img }) {
   return (
-    <div className={`card h-100 border-0 ${styles.card}`}>
-      <div className="card-body p-4">
+ <div className={`card h-100 border-0 ${styles.card}`}>
+      <div className={`card-body p-4 ${styles.cardBox}`} >
         <div className="d-flex align-items-center gap-3 mb-3">
           <div>
             <h5 className={`mb-1 ${styles.name}`}>{name}</h5>
-            <div className={`small ${styles.role}`}>{role}</div>
+            {/* <div className={`small ${styles.role}`}>{role}</div> */}
           </div>
         </div>
+            <div className={`small ${styles.role}`}>{role}</div>
         <p className={`mb-4 ${styles.blurb}`}>{blurb}</p>
         {/* <div className="d-flex align-items-end justify-content-between gap-2">
           <div className={styles.avatarWrap}>
@@ -144,5 +158,8 @@ function MemberCard({ name, role, blurb, img }) {
         </div> */}
       </div>
     </div>
+
+
+
   );
 }
