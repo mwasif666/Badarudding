@@ -1,7 +1,7 @@
 .headersmall {
   color: var(--main);
   text-align: center;
-  padding-top: 150px;
+
   padding-bottom: 30px;
 }
 .container {
@@ -14,6 +14,7 @@
   text-align: center;
   justify-content: center;
   color: var(--main);
+  padding-top: 150px;
 }
 .headerPara {
   color: var(--main);
