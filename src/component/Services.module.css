@@ -1,18 +1,22 @@
 .services {
   padding: 60px 0px;
-  background-color: #fff;
+  /* background-color: #fff; */
   position: relative;
+  /* background-color: #f5f5f5 !important; */
+
 }
 
 .heading {
   font-size: 3rem;
   color: var(--main);
   margin-bottom: 20px;
+
 }
 
 .paddingservices {
   position: relative;
   top: 20px;
+
 }
 
 .description {
@@ -23,12 +27,14 @@
 }
 
 .sliderOuterContainer {
+
   width: 100%;
   position: relative;
   overflow: hidden;
 }
 
 .sliderContainer {
+  
   width: calc(100% + 30px);
   margin-left: -15px;
   padding: 0 15px;

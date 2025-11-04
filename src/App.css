@@ -321,7 +321,7 @@ footer {
   top: 30px !important;
 }
 .nav-sticky.navbar{
-  top: 0 !important;
+  /* top: 0 !important; */
 }
 #root .navSection:nth-of-type(2) .navTop {
   display: none !important;

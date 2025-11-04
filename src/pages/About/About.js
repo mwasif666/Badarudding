@@ -8,15 +8,20 @@ import LeadershipTeam from "./Leadership";
 import AccordionCustomer from "../../component/AccordionCustomer";
 import Vision from "../Layout7/Vision";
 import Chooseus from "../Layout7/Chooseus";
+import style from "./About.module.css"
 
 const About = () => {
   return (
     <>
       <AboutHeader />
+       <div className={style.sliderColor}>  
+
       <div className="container">
         <TimelineCarousel />
         <Vision />
       </div>
+        </div>
+
       {/* <CardsAbout /> */}
       <PartnersClients />
       <LeadershipTeam />

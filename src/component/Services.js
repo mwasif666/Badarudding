@@ -125,7 +125,7 @@ const Services = () => {
           </Col> */}
         </Row>
 
-        <Row className="align-items-start mt-4">
+<Row className="align-items-start mt-4 ">
           <Col lg={12} className={`ps-lg-0 ${styles.padding_services2}`}>
             <Row>
               {/* First Row -> pehle 4 services */}

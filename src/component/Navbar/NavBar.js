@@ -94,14 +94,19 @@ const NavbarPage = () => {
   return (
     <>
       <React.Fragment>
-        <div className="navSection">
+        <div className={`navSection`}>
           <div className="navTop">
             <div
               style={{
                 background: "black",
                 color: "white",
+                textAlign:"center",
                 fontSize: "14px",
                 padding: "6px 0",
+                width:"100%",
+                zIndex:"9999",
+                position:"fixed",
+                top:'0'
               }}
             >
               <Container className="d-flex justify-content-end align-items-center flex-wrap">

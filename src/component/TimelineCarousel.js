@@ -119,7 +119,8 @@ const TimelineCarousel = () => {
   }, [activeIndex]);
 
   return (
-    <div className={styles.carouselContainer}>
+   <div className={styles.sliderColor}>
+     <div className={styles.carouselContainer}>
       <div className={styles.carousel}>
         <div className={styles.carouselInner}>
           {slides.map((slide, index) => (
@@ -188,6 +189,7 @@ const TimelineCarousel = () => {
         </div>
       </div>
     </div>
+   </div>
   );
 };
 
