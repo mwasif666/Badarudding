@@ -18,16 +18,14 @@ import { div } from "motion/react-client";
 
 const team = [
   {
-    name: "For Operational Querry email us at",
+    name: "For Operational Query email us at",
     role: "raheel.javed@badaruddin.net",
-    blurb:
-      "+92 301 8209980",
+    blurb: "+92 301 8209980",
   },
   {
     name: "For Customer Service email us at",
     role: "huzaifa.iqbal@badaruddin.net",
-    blurb:
-      "+92 320 5486534",
+    blurb: "+92 320 5486534",
   },
   //   {
   //   name: "Raheel Javed",
@@ -125,15 +123,15 @@ export default function LeadershipTeam() {
 
 function MemberCard({ name, role, blurb, img }) {
   return (
- <div className={`card h-100 border-0 ${styles.card}`}>
-      <div className={`card-body p-4 ${styles.cardBox}`} >
+    <div className={`card h-100 border-0 ${styles.card}`}>
+      <div className={`card-body p-4 ${styles.cardBox}`}>
         <div className="d-flex align-items-center gap-3 mb-3">
           <div>
             <h5 className={`mb-1 ${styles.name}`}>{name}</h5>
             {/* <div className={`small ${styles.role}`}>{role}</div> */}
           </div>
         </div>
-            <div className={`small ${styles.role}`}>{role}</div>
+        <div className={`small ${styles.role}`}>{role}</div>
         <p className={`mb-4 ${styles.blurb}`}>{blurb}</p>
         {/* <div className="d-flex align-items-end justify-content-between gap-2">
           <div className={styles.avatarWrap}>
@@ -158,8 +156,5 @@ function MemberCard({ name, role, blurb, img }) {
         </div> */}
       </div>
     </div>
-
-
-
   );
 }
